@@ -8,3 +8,4 @@ Automated and verified development entries.
 - `2026-08-05 14:49:00 +0530`: style(canvas): polish responsive breakpoint spacing for mobile
 - `2026-08-05 16:26:00 +0530`: perf(render): memoize virtualized list item calculations
 - `2026-08-05 18:43:00 +0530`: docs(specs): update component architecture diagrams in dev log
+- `2026-08-08 10:15:00 +0530`: test(unit): add shallow rendering tests for modal backdrop
