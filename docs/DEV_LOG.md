@@ -20,3 +20,4 @@ Automated and verified development entries.
 - `2026-08-14 12:32:00 +0530`: docs(specs): update component architecture diagrams in dev log
 - `2026-08-14 14:49:00 +0530`: test(unit): add shallow rendering tests for modal backdrop
 - `2026-08-14 16:26:00 +0530`: feat(a11y): add keyboard navigation traps for accessibility
+- `2026-08-14 18:43:00 +0530`: fix(animation): resolve frame stutter on canvas transition
