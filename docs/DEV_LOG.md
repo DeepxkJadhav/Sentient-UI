@@ -22,3 +22,4 @@ Automated and verified development entries.
 - `2026-08-14 16:26:00 +0530`: feat(a11y): add keyboard navigation traps for accessibility
 - `2026-08-14 18:43:00 +0530`: fix(animation): resolve frame stutter on canvas transition
 - `2026-08-17 10:15:00 +0530`: chore(tokens): audit core css tokens and variable mappings
+- `2026-08-17 12:32:00 +0530`: feat(ui): refine glassmorphism panel blur and border radius
