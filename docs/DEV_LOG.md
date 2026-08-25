@@ -24,3 +24,4 @@ Automated and verified development entries.
 - `2026-08-17 10:15:00 +0530`: chore(tokens): audit core css tokens and variable mappings
 - `2026-08-17 12:32:00 +0530`: feat(ui): refine glassmorphism panel blur and border radius
 - `2026-08-17 14:49:00 +0530`: fix(components): prevent layout shift on async state mount
+- `2026-08-25 10:15:00 +0530`: refactor(theme): optimize token caching in reactive theme store
