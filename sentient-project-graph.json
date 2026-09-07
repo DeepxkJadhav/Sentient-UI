@@ -1,0 +1,752 @@
+{
+  "project": "Sentient",
+  "repository": "https://github.com/DeepxkJadhav/Sentient",
+  "author": "Deepxk Jadhav",
+  "generatedAt": "2026-09-07T20:43:54.868Z",
+  "metrics": {
+    "totalNodes": 53,
+    "totalEdges": 53,
+    "subsystems": {
+      "entrypoints": 2,
+      "core": 3,
+      "memory": 3,
+      "plugins": 41,
+      "nativeCrates": 3
+    }
+  },
+  "nodes": [
+    {
+      "id": "bin_sentient",
+      "label": "bin/sentient.js",
+      "category": "entrypoint",
+      "description": "Primary CLI wrapper and binary bootstrap"
+    },
+    {
+      "id": "bin_cli",
+      "label": "bin/cli.js",
+      "category": "entrypoint",
+      "description": "Universal cross-platform entrypoint"
+    },
+    {
+      "id": "cli_core",
+      "label": "v3/@claude-flow/cli",
+      "category": "core_cli",
+      "description": "Modernized V3 Command Line Interface, command registry, MCP auto-detection"
+    },
+    {
+      "id": "swarm_coord",
+      "label": "SwarmCoordinator",
+      "category": "coordination",
+      "description": "Hierarchical and mesh multi-agent consensus orchestrator"
+    },
+    {
+      "id": "agent_lifecycle",
+      "label": "AgentLifecycle",
+      "category": "coordination",
+      "description": "Agent spawning, status tracking, health monitoring"
+    },
+    {
+      "id": "task_engine",
+      "label": "WorkflowEngine",
+      "category": "execution",
+      "description": "Task assignment, dependency resolution, event-driven runner"
+    },
+    {
+      "id": "agentdb",
+      "label": "AgentDB Backend",
+      "category": "memory",
+      "description": "HNSW vector database, 150x-12,500x fast search, persistent memory"
+    },
+    {
+      "id": "hybrid_mem",
+      "label": "Hybrid Memory",
+      "category": "memory",
+      "description": "Multi-tier storage balancing hot cache and disk persistence"
+    },
+    {
+      "id": "sona_neural",
+      "label": "SONA Neural Learning",
+      "category": "intelligence",
+      "description": "Self-optimizing trajectory patterns, reinforcement feedback"
+    },
+    {
+      "id": "crate_agntcy",
+      "label": "sentient-agntcy",
+      "category": "native_crate",
+      "description": "Rust crate for high-performance agentic networking"
+    },
+    {
+      "id": "crate_peer",
+      "label": "sentient-federation-peer",
+      "category": "native_crate",
+      "description": "QUIC-based multi-machine peer federation binary"
+    },
+    {
+      "id": "crate_watermark",
+      "label": "sentient-watermark",
+      "category": "native_crate",
+      "description": "SynthID-Text style LLM provenance and Bayesian verification"
+    },
+    {
+      "id": "plugin_sentient_adr",
+      "label": "sentient-adr",
+      "category": "plugin",
+      "description": "ADR lifecycle management — create, index, reconcile, supersede, check compliance, and link Architecture Decision Records to code via AgentDB hierarchical store + causal edges (supersedes/amends/depends-on/related)",
+      "dir": "plugins/sentient-adr"
+    },
+    {
+      "id": "plugin_sentient_agent",
+      "label": "sentient-agent",
+      "category": "plugin",
+      "description": "Agent runtimes for sentient — local WASM-sandboxed agents (rvagent: 10 wasm_agent_*/wasm_gallery_* MCP tools, built on @ruvector/rvagent-wasm + @ruvector/ruvllm-wasm per ADR-070) plus Anthropic Claude Managed Agents as a cloud backend (managed_agent_* MCP tools per ADR-115). One interface, local-vs-cloud runtimes.",
+      "dir": "plugins/sentient-agent"
+    },
+    {
+      "id": "plugin_sentient_agentdb",
+      "label": "sentient-agentdb",
+      "category": "plugin",
+      "description": "Substrate plugin for Sentient memory: AgentDB controller bridge (15 agentdb_* MCP tools), RuVector ONNX embeddings (10 embeddings_* tools incl. RaBitQ 32x quantization), and WASM HNSW pattern router (3 ruvllm_hnsw_* tools)",
+      "dir": "plugins/sentient-agentdb"
+    },
+    {
+      "id": "plugin_sentient_agntcy",
+      "label": "sentient-agntcy",
+      "category": "plugin",
+      "description": "AGNTCY/Outshift Internet-of-Cognition runtime integration for Sentient — SLIM secure transport for cross-host agent coordination, CASA intent-scoped tool authorization enforcement, optional IOC Layer 9 coordination events, and AGNTCY identity/observability spans (ADR-380). Optional, removable augmentation per ADR-150; degrades gracefully when AGNTCY/SLIM packages are not installed.",
+      "dir": "plugins/sentient-agntcy"
+    },
+    {
+      "id": "plugin_sentient_aidefence",
+      "label": "sentient-aidefence",
+      "category": "plugin",
+      "description": "AI safety scanning, PII detection, prompt injection defense, and adaptive threat learning",
+      "dir": "plugins/sentient-aidefence"
+    },
+    {
+      "id": "plugin_sentient_arena",
+      "label": "sentient-arena",
+      "category": "plugin",
+      "description": "Competitive ruliology for Sentient swarms — arenas, tournaments, and adaptive co-evolution of program strategies (ADR-147/148). Strategies-as-programs compete under payoff games; tournaments produce Wolfram-style competitive arrays; hill-climb and mutual co-evolution discover winners empirically.",
+      "dir": "plugins/sentient-arena"
+    },
+    {
+      "id": "plugin_sentient_autopilot",
+      "label": "sentient-autopilot",
+      "category": "plugin",
+      "description": "Autonomous /loop-driven task completion with learning, prediction, and progress tracking — wraps 10 autopilot_* MCP tools (status/enable/disable/config/reset/log/progress/learn/history/predict)",
+      "dir": "plugins/sentient-autopilot"
+    },
+    {
+      "id": "plugin_sentient_bbs_federation",
+      "label": "sentient-bbs-federation",
+      "category": "plugin",
+      "description": "AgentBBS federated business-domain BBS room integration for sentient (ADR-164 Phase 1). Exposes federation_bbs_register / federation_bbs_publish / federation_bbs_watch / federation_bbs_human_join MCP tools that wrap the agentbbs Rust workspace as a special-tier federation peer. agentbbs lives in optionalDependencies; every handler gracefully degrades to {degraded:true} when the package is missing, mirroring the architectural constraint pattern from ADR-150 and agenticow (PR #2500).",
+      "dir": "plugins/sentient-bbs-federation"
+    },
+    {
+      "id": "plugin_sentient_browser",
+      "label": "sentient-browser",
+      "category": "plugin",
+      "description": "Session-as-skill browser automation: Playwright + RVF cognitive containers + ruvector trajectories + AgentDB selector memory + AIDefence PII/injection gates",
+      "dir": "plugins/sentient-browser"
+    },
+    {
+      "id": "plugin_sentient_business_pods",
+      "label": "sentient-business-pods",
+      "category": "plugin",
+      "description": "ADR-164 Phase 2 — business-domain pod templates for the federated business autopilot. Ships the sales pod template (templates/sales.json) and a single-tick runner (scripts/pod-tick.mjs) that pre-flights templates via business_pod_validate, reserves budget through a file-based stub ledger (atomic SQLite tracker is Phase 3 per ADR-164.1), resolves each agent role against sentient's agent registry, constructs dry-run prompts, and posts an envelope summary to the room via federation_bbs_publish. Dry-run by default — --live is reserved for Phase 3 Managed-Agent + claude-p wiring.",
+      "dir": "plugins/sentient-business-pods"
+    },
+    {
+      "id": "plugin_sentient_core",
+      "label": "sentient-core",
+      "category": "plugin",
+      "description": "Foundation plugin — registers the sentient MCP server (300+ tools across memory/agentdb/embeddings/hooks/aidefence/neural/autopilot/browser/agent/swarm), provides 4 generalist agents (coder/researcher/reviewer/witness-curator), 5 skills (discover-plugins/init-project/sentient-doctor/sentient-status/witness), and a curated plugin-discovery catalog",
+      "dir": "plugins/sentient-core"
+    },
+    {
+      "id": "plugin_sentient_cost_tracker",
+      "label": "sentient-cost-tracker",
+      "category": "plugin",
+      "description": "Token usage tracking, model cost attribution per agent, budget alerts, and optimization recommendations — uses memory_* (namespace-routed) for cost-tracking and cost-patterns; pairs with federation budget circuit breaker (ADR-097)",
+      "dir": "plugins/sentient-cost-tracker"
+    },
+    {
+      "id": "plugin_sentient_daa",
+      "label": "sentient-daa",
+      "category": "plugin",
+      "description": "Dynamic Agentic Architecture — 8 daa_* MCP tools for adaptive agents (create/adapt), cognitive patterns, workflows (create/execute), knowledge sharing, and learning/performance metrics. Feeds the JUDGE phase of the 4-step intelligence pipeline.",
+      "dir": "plugins/sentient-daa"
+    },
+    {
+      "id": "plugin_sentient_ddd",
+      "label": "sentient-ddd",
+      "category": "plugin",
+      "description": "Domain-Driven Design scaffolding — bounded contexts, aggregate roots, domain events, value objects, repositories, and anti-corruption layers; navigable domain graph stored in AgentDB",
+      "dir": "plugins/sentient-ddd"
+    },
+    {
+      "id": "plugin_sentient_deepseek_harness",
+      "label": "sentient-deepseek-harness",
+      "category": "plugin",
+      "description": "Sentient extensible plugin",
+      "dir": "plugins/sentient-deepseek-harness"
+    },
+    {
+      "id": "plugin_sentient_docs",
+      "label": "sentient-docs",
+      "category": "plugin",
+      "description": "Documentation generation, API docs (JSDoc/TSDoc/OpenAPI), and drift detection — drives the `document` background worker via hooks_worker-dispatch; uses Haiku model for cost-efficient docs work",
+      "dir": "plugins/sentient-docs"
+    },
+    {
+      "id": "plugin_sentient_federation",
+      "label": "sentient-federation",
+      "category": "plugin",
+      "description": "Cross-installation agent federation with zero-trust security, peer discovery, consensus-based task routing, and per-call budget circuit breaker (ADR-097)",
+      "dir": "plugins/sentient-federation"
+    },
+    {
+      "id": "plugin_sentient_goals",
+      "label": "sentient-goals",
+      "category": "plugin",
+      "description": "Long-horizon goal planning, deep research orchestration, and adaptive replanning using GOAP algorithms",
+      "dir": "plugins/sentient-goals"
+    },
+    {
+      "id": "plugin_sentient_graph_intelligence",
+      "label": "sentient-graph-intelligence",
+      "category": "plugin",
+      "description": "Sentient Graph Intelligence Engine — real-time relationship intelligence with complexity-aware execution. Single-entry personalized PageRank, streaming delta updates, witness-signed reasoning artifacts, federation-distributable PR vectors. Built on sublinear-time-solver@1.7.0.",
+      "dir": "plugins/sentient-graph-intelligence"
+    },
+    {
+      "id": "plugin_sentient_graphify",
+      "label": "sentient-graphify",
+      "category": "plugin",
+      "description": "Whole-project architecture, logic flow, and security boundary graph mapping for Sentient",
+      "dir": "plugins/sentient-graphify"
+    },
+    {
+      "id": "plugin_sentient_intelligence",
+      "label": "sentient-intelligence",
+      "category": "plugin",
+      "description": "User-facing surface for Sentient's self-learning system: 6 neural_* + 10 hooks_intelligence_* + 6 routing/meta hooks + 3 hooks_model-* + 4 SONA/MicroLoRA tools (29 total). Implements the 4-step pipeline (RETRIEVE → JUDGE → DISTILL → CONSOLIDATE) and IPFS-based cross-project pattern transfer.",
+      "dir": "plugins/sentient-intelligence"
+    },
+    {
+      "id": "plugin_sentient_iot_cognitum",
+      "label": "sentient-iot-cognitum",
+      "category": "plugin",
+      "description": "IoT device lifecycle, telemetry anomaly detection, fleet management, and witness chain verification for Cognitum Seed hardware",
+      "dir": "plugins/sentient-iot-cognitum"
+    },
+    {
+      "id": "plugin_sentient_jujutsu",
+      "label": "sentient-jujutsu",
+      "category": "plugin",
+      "description": "Advanced git workflows with diff analysis, risk scoring, change classification (feature/bugfix/refactor/...), and reviewer recommendations — wraps 6 analyze_* MCP tools (diff, diff-risk, diff-classify, diff-reviewers, file-risk, diff-stats)",
+      "dir": "plugins/sentient-jujutsu"
+    },
+    {
+      "id": "plugin_sentient_knowledge_graph",
+      "label": "sentient-knowledge-graph",
+      "category": "plugin",
+      "description": "Knowledge graph construction — entity extraction, relation mapping, and pathfinder graph traversal",
+      "dir": "plugins/sentient-knowledge-graph"
+    },
+    {
+      "id": "plugin_sentient_loop_workers",
+      "label": "sentient-loop-workers",
+      "category": "plugin",
+      "description": "Cache-aware /loop workers and CronCreate background automation — wraps 5 hooks_worker-* MCP tools (list/dispatch/status/detect/cancel) and exposes 12 background worker triggers (ultralearn, optimize, consolidate, predict, audit, map, preload, deepdive, document, refactor, benchmark, testgaps)",
+      "dir": "plugins/sentient-loop-workers"
+    },
+    {
+      "id": "plugin_sentient_market_data",
+      "label": "sentient-market-data",
+      "category": "plugin",
+      "description": "Market data ingestion — feed normalization, OHLCV vectorization, and HNSW-indexed pattern matching",
+      "dir": "plugins/sentient-market-data"
+    },
+    {
+      "id": "plugin_sentient_metaharness",
+      "label": "sentient-metaharness",
+      "category": "plugin",
+      "description": "MetaHarness integration for sentient — surfaces score/genome/mint/mcp-scan/threat-model via skills; pairs with @metaharness/router (ADR-148/149) for cost-optimal model routing; honors ADR-150's architectural constraint that MetaHarness remains an optional augmentation, never a required runtime dependency",
+      "dir": "plugins/sentient-metaharness"
+    },
+    {
+      "id": "plugin_sentient_migrations",
+      "label": "sentient-migrations",
+      "category": "plugin",
+      "description": "Schema migration management — generate, validate, dry-run, and rollback database migrations",
+      "dir": "plugins/sentient-migrations"
+    },
+    {
+      "id": "plugin_sentient_music",
+      "label": "sentient-music",
+      "category": "plugin",
+      "description": "AI music generation via Cognitum Music (cogmusic MCP) — compose lyrics/prompts, generate tracks, separate stems, extract MIDI, and master through your own music.cognitum.one account",
+      "dir": "plugins/sentient-music"
+    },
+    {
+      "id": "plugin_sentient_neural_trader",
+      "label": "sentient-neural-trader",
+      "category": "plugin",
+      "description": "Neural trading via npx neural-trader — self-learning strategies, Rust/NAPI backtesting, 112+ MCP tools, swarm coordination, and portfolio optimization",
+      "dir": "plugins/sentient-neural-trader"
+    },
+    {
+      "id": "plugin_sentient_observability",
+      "label": "sentient-observability",
+      "category": "plugin",
+      "description": "Structured logging, distributed tracing, and metrics — correlate agent swarm activity with application telemetry",
+      "dir": "plugins/sentient-observability"
+    },
+    {
+      "id": "plugin_sentient_plugin_creator",
+      "label": "sentient-plugin-creator",
+      "category": "plugin",
+      "description": "Scaffold, validate, and publish new Claude Code plugins with the canonical plugin contract — ADR + smoke + Compatibility + namespace coordination + MCP-tool drift warnings",
+      "dir": "plugins/sentient-plugin-creator"
+    },
+    {
+      "id": "plugin_sentient_rag_memory",
+      "label": "sentient-rag-memory",
+      "category": "plugin",
+      "description": "RuVector memory with HNSW search, AgentDB, and semantic retrieval",
+      "dir": "plugins/sentient-rag-memory"
+    },
+    {
+      "id": "plugin_sentient_ruvector",
+      "label": "sentient-ruvector",
+      "category": "plugin",
+      "description": "Self-learning vector database via npx ruvector@0.2.25 — HNSW, adaptive LoRA embeddings, code-graph clustering, hooks routing, brain/SONA, 103 MCP tools",
+      "dir": "plugins/sentient-ruvector"
+    },
+    {
+      "id": "plugin_sentient_ruvllm",
+      "label": "sentient-ruvllm",
+      "category": "plugin",
+      "description": "RuVLLM local inference with chat formatting (Claude/GPT/Gemini/Ollama/Cohere), model configuration, MicroLoRA fine-tuning, and SONA real-time adaptation",
+      "dir": "plugins/sentient-ruvllm"
+    },
+    {
+      "id": "plugin_sentient_rvf",
+      "label": "sentient-rvf",
+      "category": "plugin",
+      "description": "RVF format for portable agent memory, session persistence, and cross-platform transfer",
+      "dir": "plugins/sentient-rvf"
+    },
+    {
+      "id": "plugin_sentient_security_audit",
+      "label": "sentient-security-audit",
+      "category": "plugin",
+      "description": "Security review, dependency scanning, policy gates, and CVE monitoring",
+      "dir": "plugins/sentient-security-audit"
+    },
+    {
+      "id": "plugin_sentient_sparc",
+      "label": "sentient-sparc",
+      "category": "plugin",
+      "description": "SPARC methodology — Specification, Pseudocode, Architecture, Refinement, Completion phases with gate checks",
+      "dir": "plugins/sentient-sparc"
+    },
+    {
+      "id": "plugin_sentient_swarm",
+      "label": "sentient-swarm",
+      "category": "plugin",
+      "description": "Agent teams, swarm coordination, Monitor streams, and worktree isolation — wraps 4 swarm_* + 8 agent_* MCP tools (12 total) plus 6 topologies (hierarchical / mesh / hierarchical-mesh / ring / star / adaptive)",
+      "dir": "plugins/sentient-swarm"
+    },
+    {
+      "id": "plugin_sentient_testgen",
+      "label": "sentient-testgen",
+      "category": "plugin",
+      "description": "Test gap detection, coverage analysis, and automated test generation — drives the testgaps background worker via hooks_worker-dispatch; SPARC Refinement-phase canonical owner",
+      "dir": "plugins/sentient-testgen"
+    },
+    {
+      "id": "plugin_sentient_workflows",
+      "label": "sentient-workflows",
+      "category": "plugin",
+      "description": "Workflow automation across two surfaces: the 10 workflow_* MCP tools (create/run/execute/status/list/pause/resume/cancel/delete/template) with full state-machine lifecycle (created → running ↔ paused → completed/cancelled), and native Claude Code Workflow JS orchestration (.claude/workflows/*.js — agent/parallel/pipeline/phase fan-out). Includes GAIA benchmark component for Princeton HAL leaderboard submissions.",
+      "dir": "plugins/sentient-workflows"
+    }
+  ],
+  "edges": [
+    {
+      "from": "bin_sentient",
+      "to": "cli_core",
+      "type": "executes",
+      "description": "Proxies invocation to CLI core"
+    },
+    {
+      "from": "bin_cli",
+      "to": "cli_core",
+      "type": "executes",
+      "description": "Proxies invocation to CLI core"
+    },
+    {
+      "from": "cli_core",
+      "to": "swarm_coord",
+      "type": "dispatches",
+      "description": "Routes CLI/MCP swarm commands"
+    },
+    {
+      "from": "swarm_coord",
+      "to": "agent_lifecycle",
+      "type": "manages",
+      "description": "Spawns and monitors worker agents"
+    },
+    {
+      "from": "swarm_coord",
+      "to": "task_engine",
+      "type": "orchestrates",
+      "description": "Distributes task DAGs to active workers"
+    },
+    {
+      "from": "task_engine",
+      "to": "agentdb",
+      "type": "queries_and_stores",
+      "description": "Stores pattern solutions and task context"
+    },
+    {
+      "from": "swarm_coord",
+      "to": "sona_neural",
+      "type": "trains",
+      "description": "Updates neural weights from successful tasks"
+    },
+    {
+      "from": "agentdb",
+      "to": "hybrid_mem",
+      "type": "persists",
+      "description": "Underlying database persistence"
+    },
+    {
+      "from": "cli_core",
+      "to": "crate_peer",
+      "type": "spawns_federation",
+      "description": "Multi-machine cluster coordination"
+    },
+    {
+      "from": "task_engine",
+      "to": "crate_watermark",
+      "type": "verifies",
+      "description": "Generative text provenance tracking"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_adr",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_agent",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_agentdb",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "plugin_sentient_agentdb",
+      "to": "agentdb",
+      "type": "interfaces_with",
+      "description": "Vector storage backend"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_agntcy",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_aidefence",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_arena",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_autopilot",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_bbs_federation",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_browser",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_business_pods",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_core",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_cost_tracker",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_daa",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_ddd",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_deepseek_harness",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_docs",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_federation",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_goals",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_graph_intelligence",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_graphify",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_intelligence",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_iot_cognitum",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_jujutsu",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_knowledge_graph",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_loop_workers",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_market_data",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_metaharness",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_migrations",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_music",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_neural_trader",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_observability",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_plugin_creator",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_rag_memory",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "plugin_sentient_rag_memory",
+      "to": "agentdb",
+      "type": "interfaces_with",
+      "description": "Vector storage backend"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_ruvector",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_ruvllm",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_rvf",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_security_audit",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_sparc",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_swarm",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_testgen",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    },
+    {
+      "from": "cli_core",
+      "to": "plugin_sentient_workflows",
+      "type": "loads_plugin",
+      "description": "Extends CLI commands and agents"
+    }
+  ],
+  "securitySurface": {
+    "validationGates": [
+      {
+        "plugin": "sentient-aidefence",
+        "role": "AI safety scanning, PII detection, prompt injection defense, and adaptive threat learning"
+      },
+      {
+        "plugin": "sentient-security-audit",
+        "role": "Security review, dependency scanning, policy gates, and CVE monitoring"
+      },
+      {
+        "target": "CLI Argument Parser",
+        "validator": "CommandParser (flags/positionals sanitation)"
+      },
+      {
+        "target": "MCP Tool Invocations",
+        "validator": "JSON Schema & Zod Validators"
+      },
+      {
+        "target": "Plugin Registry",
+        "validator": "Ed25519 signature / manifest verification"
+      }
+    ],
+    "executionSinks": [
+      {
+        "target": "child_process / shell dispatch",
+        "component": "v3/@claude-flow/cli/src/update/executor.ts",
+        "risk": "Privileged execution"
+      },
+      {
+        "target": "Filesystem state persistence",
+        "component": ".claude/ & data/ stores",
+        "risk": "Unbounded disk write"
+      },
+      {
+        "target": "Daemon background process",
+        "component": "v3/@claude-flow/cli/src/services/daemon-autostart.ts",
+        "risk": "Long-running detached process"
+      }
+    ],
+    "networkTransports": [
+      {
+        "transport": "MCP stdio",
+        "channel": "Standard IO JSON-RPC 2.0",
+        "boundary": "Local Process Isolation"
+      },
+      {
+        "transport": "QUIC / WebSockets",
+        "channel": "Peer Federation & Agentic IPC",
+        "boundary": "Encrypted Machine-to-Machine"
+      }
+    ],
+    "trustBoundaries": []
+  }
+}

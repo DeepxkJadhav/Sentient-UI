@@ -7,14 +7,9 @@
   "bin": {
     "sentient": "bin/sentient.js"
   },
-  "homepage": "https://github.com/sentient/sentient#readme",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient#readme",
   "bugs": {
-    "url": "https://github.com/sentient/sentient/issues",
-    "email": "support@sentient.io"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/sentient"
+    "url": "https://github.com/DeepxkJadhav/Sentient/issues"
   },
   "files": [
     "bin/**",
@@ -104,9 +99,8 @@
     "self-learning"
   ],
   "author": {
-    "name": "Sentient",
-    "email": "ruv@sentient.io",
-    "url": "https://sentient.io"
+    "name": "Deepxk Jadhav",
+    "url": "https://github.com/DeepxkJadhav"
   },
   "license": "MIT",
   "publishConfig": {

@@ -15,9 +15,9 @@
     "cli": "bin/cli.js",
     "claude-flow": "bin/cli.js"
   },
-  "homepage": "https://github.com/sentient#readme",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient#readme",
   "bugs": {
-    "url": "https://github.com/sentient/issues"
+    "url": "https://github.com/DeepxkJadhav/Sentient/issues"
   },
   "files": [
     "bin/**",
@@ -163,10 +163,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sentient/sentient.git"
+    "url": "git+https://github.com/DeepxkJadhav/Sentient.git"
   },
   "keywords": [
-    "ruvflow",
+    "sentient",
     "claude",
     "claude-code",
     "anthropic",
@@ -200,7 +200,7 @@
     "consensus",
     "self-learning"
   ],
-  "author": "Sentient <ruv@sentient.io> (https://sentient.io)",
+  "author": "Deepxk Jadhav (https://github.com/DeepxkJadhav)",
   "license": "MIT",
   "publishConfig": {
     "access": "public",

@@ -43,6 +43,7 @@ claude $(ls -d plugins/sentient-*/ | sed 's|^|--plugin-dir |' | tr '\n' ' ')
 | [sentient-adr](sentient-adr/) | ADR lifecycle — create, index, supersede, compliance checking |
 | [sentient-ddd](sentient-ddd/) | DDD scaffolding — bounded contexts, aggregates, domain events |
 | [sentient-sparc](sentient-sparc/) | SPARC methodology with 5 phases and quality gates |
+| [sentient-graphify](sentient-graphify/) | Whole-project architecture, logic flow, and security boundary graph mapping |
 
 ### Quality & Security
 

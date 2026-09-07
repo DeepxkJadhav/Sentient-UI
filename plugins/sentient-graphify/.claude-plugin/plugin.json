@@ -1,0 +1,20 @@
+{
+  "name": "sentient-graphify",
+  "description": "Whole-project architecture, logic flow, and security boundary graph mapping for Sentient",
+  "version": "1.0.0",
+  "author": {
+    "name": "Deepxk Jadhav",
+    "url": "https://github.com/DeepxkJadhav"
+  },
+  "homepage": "https://github.com/DeepxkJadhav/Sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "graphify",
+    "architecture-mapping",
+    "dependency-graph",
+    "logic-flow",
+    "security-audit",
+    "codebase-graph"
+  ]
+}

@@ -13,13 +13,13 @@
     "claude-flow-mcp": "bin/mcp-server.js",
     "sentient-mcp": "bin/mcp-server.js"
   },
-  "homepage": "https://github.com/sentient/sentient#readme",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient#readme",
   "bugs": {
-    "url": "https://github.com/sentient/sentient/issues"
+    "url": "https://github.com/DeepxkJadhav/Sentient/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sentient/sentient.git",
+    "url": "git+https://github.com/DeepxkJadhav/Sentient.git",
     "directory": "v3/@claude-flow/cli"
   },
   "keywords": [
@@ -42,7 +42,7 @@
     "self-learning",
     "enterprise"
   ],
-  "author": "Sentient <ruv@sentient.io> (https://sentient.io)",
+  "author": "Deepxk Jadhav (https://github.com/DeepxkJadhav)",
   "license": "MIT",
   "exports": {
     ".": {
