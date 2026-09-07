@@ -1,0 +1,13 @@
+{
+  "name": "sentient-gemini-app",
+  "version": "1.0.0",
+  "description": "Showcase AI agent application powered by Sentient and Google Gemini",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=../../.env server.js",
+    "cli": "node --env-file=../../.env cli.js"
+  },
+  "author": "Deepxk Jadhav",
+  "license": "MIT"
+}
