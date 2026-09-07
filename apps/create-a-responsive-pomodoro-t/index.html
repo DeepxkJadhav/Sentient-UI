@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentient Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body data-theme="work">
+    <div class="app-container">
+        <header>
+            <h1>Sentient Pomodoro</h1>
+        </header>
+
+        <main>
+            <nav class="mode-selector">
+                <button class="mode-btn active" data-mode="work">Work</button>
+                <button class="mode-btn" data-mode="short">Short Break</button>
+                <button class="mode-btn" data-mode="long">Long Break</button>
+            </nav>
+
+            <div class="timer-display">
+                <svg class="progress-ring" width="300" height="300">
+                    <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="8" fill="transparent" r="140" cx="150" cy="150"/>
+                    <circle class="progress-ring__circle" stroke="white" stroke-width="8" fill="transparent" r="140" cx="150" cy="150"/>
+                </svg>
+                <div class="time-text" id="time-display">25:00</div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="main-btn">START</button>
+                <button id="reset-btn" class="secondary-btn">RESET</button>
+            </div>
+        </main>
+
+        <section class="stats-container">
+            <h3>Session Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-label">Today</span>
+                    <span id="stat-today" class="stat-value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Total</span>
+                    <span id="stat-total" class="stat-value">0</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Alarm sound (Short beep) -->
+    <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
