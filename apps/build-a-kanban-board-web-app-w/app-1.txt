@@ -1,0 +1,5 @@
+npm create vite@latest kanban-app -- --template react-ts
+cd kanban-app
+npm install @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities lucide-react
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p

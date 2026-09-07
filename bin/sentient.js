@@ -8,7 +8,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
@@ -345,23 +345,18 @@ async function handleServe() {
 
 // Command Dispatcher
 async function main() {
-  const cmd = args[0] ? args[0].toLowerCase() : "help";
-  const rest = args.slice(1).join(" ");
+  const cmd = args[0] ? args[0].toLowerCase() : "";
 
   switch (cmd) {
     case "build":
     case "create":
     case "new":
-      await handleBuild(rest);
+      await handleBuild(args.slice(1).join(" "));
       break;
     case "chat":
     case "interactive":
     case "repl":
       await handleChat();
-      break;
-    case "doctor":
-    case "status":
-      await handleDoctor();
       break;
     case "graph":
     case "graphify":
@@ -372,18 +367,12 @@ async function main() {
     case "ui":
       await handleServe();
       break;
-    case "help":
-    case "--help":
-    case "-h":
-      printHelp();
-      break;
     default:
-      // If user typed a string prompt without "build", default to build!
-      if (args.length > 0) {
-        await handleBuild(args.join(" "));
-      } else {
-        printHelp();
-      }
+      // Delegate all standard Sentient V3 commands (swarm, agent, task, memory, hooks,
+      // init, start, status, daemon, mcp, neural, hive-mind, doctor, security, etc.)
+      // to the full V3 engine
+      const v3CliPath = path.join(rootDir, "v3", "@claude-flow", "cli", "bin", "cli.js");
+      await import(pathToFileURL(v3CliPath).href);
       break;
   }
 }

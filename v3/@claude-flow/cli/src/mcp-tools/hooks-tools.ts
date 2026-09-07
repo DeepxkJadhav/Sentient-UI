@@ -3553,7 +3553,7 @@ export const hooksIntelligenceStats: MCPTool = {
     };
     if (moe) {
       const loadBalance = moe.getLoadBalance();
-      const activeExperts = Object.values(loadBalance.routingCounts).filter((u: number) => u > 0).length;
+      const activeExperts = Object.values(loadBalance.routingCounts).filter((u: any) => Number(u) > 0).length;
       // Calculate average utilization as proxy for confidence
       const utilValues = Object.values(loadBalance.utilization) as number[];
       const avgUtil = utilValues.length > 0 ? utilValues.reduce((a, b) => a + b, 0) / utilValues.length : 0;
@@ -4152,7 +4152,7 @@ export const hooksIntelligenceAttention: MCPTool = {
           const attentionResult = flash.attention([q], keys, values);
           // Compute softmax weights from output magnitudes
           const outputMags = attentionResult.output[0]
-            ? Array.from(attentionResult.output[0]).slice(0, keys.length).map(v => Math.abs(v))
+            ? Array.from(attentionResult.output[0]).slice(0, keys.length).map((v: any) => Math.abs(Number(v)))
             : new Array(keys.length).fill(1);
           const sumMags = outputMags.reduce((a, b) => a + b, 0) || 1;
           for (let i = 0; i < keys.length; i++) {
