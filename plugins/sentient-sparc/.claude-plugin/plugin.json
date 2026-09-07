@@ -1,0 +1,22 @@
+{
+  "name": "sentient-sparc",
+  "description": "SPARC methodology — Specification, Pseudocode, Architecture, Refinement, Completion phases with gate checks",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "sparc",
+    "methodology",
+    "specification",
+    "architecture",
+    "refinement",
+    "mcp",
+    "phase-gates",
+    "quality-gates"
+  ]
+}

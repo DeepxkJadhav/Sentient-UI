@@ -1,0 +1,205 @@
+{
+  "name": "sentient",
+  "description": "Sentient Marketplace: Claude Code native agents, swarms, workers, and MCP tools for continuous software engineering",
+  "owner": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "plugins": [
+    {
+      "name": "sentient-core",
+      "source": "./plugins/sentient-core",
+      "description": "Core Sentient MCP tools, commands, and Claude Code orchestration patterns"
+    },
+    {
+      "name": "sentient-swarm",
+      "source": "./plugins/sentient-swarm",
+      "description": "Agent teams, swarm coordination, Monitor streams, and worktree isolation"
+    },
+    {
+      "name": "sentient-loop-workers",
+      "source": "./plugins/sentient-loop-workers",
+      "description": "Cache-aware /loop workers and CronCreate background automation"
+    },
+    {
+      "name": "sentient-security-audit",
+      "source": "./plugins/sentient-security-audit",
+      "description": "Security review, dependency scanning, policy gates, and CVE monitoring"
+    },
+    {
+      "name": "sentient-rag-memory",
+      "source": "./plugins/sentient-rag-memory",
+      "description": "RuVector memory with HNSW search, AgentDB, and semantic retrieval"
+    },
+    {
+      "name": "sentient-testgen",
+      "source": "./plugins/sentient-testgen",
+      "description": "Test gap detection, coverage analysis, and automated test generation"
+    },
+    {
+      "name": "sentient-docs",
+      "source": "./plugins/sentient-docs",
+      "description": "Documentation generation, drift detection, and API docs automation"
+    },
+    {
+      "name": "sentient-autopilot",
+      "source": "./plugins/sentient-autopilot",
+      "description": "Autonomous /loop-driven task completion with learning, prediction, and progress tracking"
+    },
+    {
+      "name": "sentient-intelligence",
+      "source": "./plugins/sentient-intelligence",
+      "description": "Self-learning neural intelligence with SONA patterns, trajectory learning, and model routing"
+    },
+    {
+      "name": "sentient-agentdb",
+      "source": "./plugins/sentient-agentdb",
+      "description": "AgentDB memory controllers with HNSW vector search, RuVector embeddings, and causal graphs"
+    },
+    {
+      "name": "sentient-aidefence",
+      "source": "./plugins/sentient-aidefence",
+      "description": "AI safety scanning, PII detection, prompt injection defense, and adaptive threat learning"
+    },
+    {
+      "name": "sentient-browser",
+      "source": "./plugins/sentient-browser",
+      "description": "Agentic browser automation with Playwright for testing, scraping, and UI interaction"
+    },
+    {
+      "name": "sentient-jujutsu",
+      "source": "./plugins/sentient-jujutsu",
+      "description": "Advanced git workflows with diff analysis, risk scoring, and reviewer recommendations"
+    },
+    {
+      "name": "sentient-agent",
+      "source": "./plugins/sentient-agent",
+      "description": "Agent runtimes — local WASM-sandboxed agents (rvagent) + Anthropic Claude Managed Agents (cloud); one interface, local-vs-cloud backends"
+    },
+    {
+      "name": "sentient-workflows",
+      "source": "./plugins/sentient-workflows",
+      "description": "Visual workflow automation with templates, orchestration, and lifecycle management"
+    },
+    {
+      "name": "sentient-daa",
+      "source": "./plugins/sentient-daa",
+      "description": "Dynamic Agentic Architecture with cognitive patterns, knowledge sharing, and adaptive agents"
+    },
+    {
+      "name": "sentient-ruvllm",
+      "source": "./plugins/sentient-ruvllm",
+      "description": "RuVLLM local inference with chat formatting, MicroLoRA fine-tuning, and SONA adaptation"
+    },
+    {
+      "name": "sentient-rvf",
+      "source": "./plugins/sentient-rvf",
+      "description": "RVF format for portable agent memory, session persistence, and cross-platform transfer"
+    },
+    {
+      "name": "sentient-plugin-creator",
+      "source": "./plugins/sentient-plugin-creator",
+      "description": "Scaffold, validate, and publish new Claude Code plugins with proper structure"
+    },
+    {
+      "name": "sentient-goals",
+      "source": "./plugins/sentient-goals",
+      "description": "Long-horizon goal planning, deep research orchestration, and adaptive replanning using GOAP"
+    },
+    {
+      "name": "sentient-adr",
+      "source": "./plugins/sentient-adr",
+      "description": "ADR lifecycle management — create, index, supersede, and link Architecture Decision Records to code"
+    },
+    {
+      "name": "sentient-cost-tracker",
+      "source": "./plugins/sentient-cost-tracker",
+      "description": "Token usage tracking, model cost attribution per agent, budget alerts, and optimization recommendations"
+    },
+    {
+      "name": "sentient-ddd",
+      "source": "./plugins/sentient-ddd",
+      "description": "Domain-Driven Design scaffolding — bounded contexts, aggregate roots, domain events, and anti-corruption layers"
+    },
+    {
+      "name": "sentient-federation",
+      "source": "./plugins/sentient-federation",
+      "description": "Cross-installation agent federation with zero-trust security, PII-gated data flow, and compliance-grade audit trails"
+    },
+    {
+      "name": "sentient-graph-intelligence",
+      "source": "./plugins/sentient-graph-intelligence",
+      "description": "Real-time graph intelligence — personalized PageRank, streaming delta updates, witness-signed reasoning, and federation-distributable vectors"
+    },
+    {
+      "name": "sentient-iot-cognitum",
+      "source": "./plugins/sentient-iot-cognitum",
+      "description": "IoT device lifecycle, telemetry anomaly detection, fleet management, and witness chain verification for Cognitum Seed hardware"
+    },
+    {
+      "name": "sentient-knowledge-graph",
+      "source": "./plugins/sentient-knowledge-graph",
+      "description": "Knowledge graph construction — entity extraction, relation mapping, and pathfinder graph traversal"
+    },
+    {
+      "name": "sentient-market-data",
+      "source": "./plugins/sentient-market-data",
+      "description": "Market data ingestion — feed normalization, OHLCV vectorization, and HNSW-indexed pattern matching"
+    },
+    {
+      "name": "sentient-migrations",
+      "source": "./plugins/sentient-migrations",
+      "description": "Schema migration management — generate, validate, dry-run, and rollback database migrations"
+    },
+    {
+      "name": "sentient-neural-trader",
+      "source": "./plugins/sentient-neural-trader",
+      "description": "Neural trading strategies — self-learning LSTM/Transformer/N-BEATS models with Rust/NAPI backtesting"
+    },
+    {
+      "name": "sentient-observability",
+      "source": "./plugins/sentient-observability",
+      "description": "Structured logging, distributed tracing, and metrics — correlate agent swarm activity with application telemetry"
+    },
+    {
+      "name": "sentient-ruvector",
+      "source": "./plugins/sentient-ruvector",
+      "description": "Self-learning vector database — HNSW, FlashAttention-3, Graph RAG, hybrid search, DiskANN, and Brain AGI"
+    },
+    {
+      "name": "sentient-sparc",
+      "source": "./plugins/sentient-sparc",
+      "description": "SPARC methodology — Specification, Pseudocode, Architecture, Refinement, Completion phases with quality gates"
+    },
+    {
+      "name": "sentient-metaharness",
+      "source": "./plugins/sentient-metaharness",
+      "description": "MetaHarness integration — surfaces score/genome/mint/mcp-scan/threat-model via skills; pairs with @metaharness/router (ADR-148/149) for cost-optimal model routing; honors ADR-150 optional-augmentation constraint"
+    },
+    {
+      "name": "sentient-arena",
+      "source": "./plugins/sentient-arena",
+      "description": "Competitive ruliology for sentient swarms — arenas, tournaments, and adaptive co-evolution of program strategies (ADR-147/148); strategies-as-programs compete under payoff games"
+    },
+    {
+      "name": "sentient-agntcy",
+      "source": "./plugins/sentient-agntcy",
+      "description": "AGNTCY/Outshift Internet-of-Cognition runtime integration — SLIM secure transport, CASA intent-scoped tool authorization, and AGNTCY identity/observability spans (ADR-380); optional, removable augmentation per ADR-150"
+    },
+    {
+      "name": "sentient-bbs-federation",
+      "source": "./plugins/sentient-bbs-federation",
+      "description": "AgentBBS federated business-domain BBS room integration (ADR-164 Phase 1) — register/publish/watch/human-join MCP tools wrapping the agentbbs Rust workspace as a federation peer; degrades gracefully when agentbbs is absent"
+    },
+    {
+      "name": "sentient-business-pods",
+      "source": "./plugins/sentient-business-pods",
+      "description": "Business-domain pod templates for the federated business autopilot (ADR-164 Phase 2) — pod templates plus a dry-run-by-default single-tick runner that validates, reserves budget, and resolves agent roles before posting to the BBS room"
+    },
+    {
+      "name": "sentient-music",
+      "source": "./plugins/sentient-music",
+      "description": "AI music generation via Cognitum Music (cogmusic MCP) — compose lyrics/prompts, generate tracks, separate stems, extract MIDI, and master through your own music.cognitum.one account"
+    }
+  ]
+}

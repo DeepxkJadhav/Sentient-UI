@@ -1,0 +1,22 @@
+{
+  "name": "sentient-swarm",
+  "description": "Agent teams, swarm coordination, Monitor streams, and worktree isolation — wraps 4 swarm_* + 8 agent_* MCP tools (12 total) plus 6 topologies (hierarchical / mesh / hierarchical-mesh / ring / star / adaptive)",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "swarm",
+    "agents",
+    "teams",
+    "monitor",
+    "mcp",
+    "topologies",
+    "worktree-isolation",
+    "monitor-stream"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sentient-observability",
+  "description": "Structured logging, distributed tracing, and metrics — correlate agent swarm activity with application telemetry",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "observability",
+    "logging",
+    "tracing",
+    "metrics",
+    "telemetry",
+    "mcp",
+    "distributed-tracing",
+    "anomaly-detection"
+  ]
+}

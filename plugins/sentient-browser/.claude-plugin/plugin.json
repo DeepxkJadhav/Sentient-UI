@@ -1,0 +1,24 @@
+{
+  "name": "sentient-browser",
+  "description": "Session-as-skill browser automation: Playwright + RVF cognitive containers + ruvector trajectories + AgentDB selector memory + AIDefence PII/injection gates",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "browser",
+    "playwright",
+    "testing",
+    "automation",
+    "scraping",
+    "rvf",
+    "replay",
+    "trajectory",
+    "agentdb",
+    "aidefence"
+  ]
+}

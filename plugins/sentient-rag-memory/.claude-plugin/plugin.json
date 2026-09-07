@@ -1,0 +1,22 @@
+{
+  "name": "sentient-rag-memory",
+  "description": "RuVector memory with HNSW search, AgentDB, and semantic retrieval",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "memory",
+    "hnsw",
+    "agentdb",
+    "rag",
+    "vector-search",
+    "mcp",
+    "claude-memories",
+    "bridged-memory"
+  ]
+}

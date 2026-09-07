@@ -1,0 +1,67 @@
+{
+  "name": "@claude-flow/watermark",
+  "version": "0.2.0",
+  "description": "SynthID-Text-style LLM text watermarking (generation + detection) as a WASM module — Tournament / non-distortionary / distortion-free schemes, indel-robust and short-text detectors. Node + browser. No watermark-removal tooling.",
+  "license": "MIT",
+  "author": "rUv <ruv@ruv.net>",
+  "homepage": "https://github.com/sentient/sentient/tree/main/v3/crates/sentient-watermark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentient/sentient.git",
+    "directory": "v3/@claude-flow/watermark"
+  },
+  "bugs": {
+    "url": "https://github.com/sentient/sentient/issues"
+  },
+  "keywords": [
+    "watermark",
+    "synthid",
+    "llm",
+    "provenance",
+    "eu-ai-act",
+    "wasm"
+  ],
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.js"
+    },
+    "./web": {
+      "types": "./web/index.d.ts",
+      "import": "./web/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "wasm/sentient_watermark.js",
+    "wasm/sentient_watermark_bg.wasm",
+    "wasm/sentient_watermark.d.ts",
+    "wasm/sentient_watermark_bg.wasm.d.ts",
+    "web/package.json",
+    "web/index.mjs",
+    "web/index.d.ts",
+    "web/sentient_watermark.js",
+    "web/sentient_watermark_bg.wasm",
+    "web/sentient_watermark.d.ts",
+    "web/sentient_watermark_bg.wasm.d.ts",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build:wasm": "bash scripts/build-wasm.sh",
+    "test": "node test/smoke.cjs && node test/smoke-web.mjs",
+    "test:node": "node test/smoke.cjs",
+    "test:web": "node test/smoke-web.mjs"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sentient-aidefence",
+  "description": "AI safety scanning, PII detection, prompt injection defense, and adaptive threat learning",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "aidefence",
+    "safety",
+    "pii",
+    "injection",
+    "security",
+    "prompt-injection",
+    "defense-in-depth",
+    "mcp"
+  ]
+}

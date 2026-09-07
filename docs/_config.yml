@@ -1,0 +1,7 @@
+title: Sentient Marketplace
+description: Claude Code native agents, swarms, workers, and MCP tools
+theme: jekyll-theme-minimal
+baseurl: /sentient
+url: https://sentient.github.io
+plugins:
+  - jekyll-seo-tag

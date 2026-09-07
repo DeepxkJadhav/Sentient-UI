@@ -1,0 +1,22 @@
+{
+  "name": "sentient-rvf",
+  "description": "RVF format for portable agent memory, session persistence, and cross-platform transfer",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "rvf",
+    "memory",
+    "session",
+    "persistence",
+    "transfer",
+    "mcp",
+    "cognitive-containers",
+    "lineage-tracking"
+  ]
+}

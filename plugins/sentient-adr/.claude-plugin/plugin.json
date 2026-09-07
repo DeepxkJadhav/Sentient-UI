@@ -1,0 +1,22 @@
+{
+  "name": "sentient-adr",
+  "description": "ADR lifecycle management \u2014 create, index, reconcile, supersede, check compliance, and link Architecture Decision Records to code via AgentDB hierarchical store + causal edges (supersedes/amends/depends-on/related)",
+  "version": "0.4.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "adr",
+    "architecture",
+    "decisions",
+    "documentation",
+    "lifecycle",
+    "compliance",
+    "causal-graph",
+    "mcp"
+  ]
+}

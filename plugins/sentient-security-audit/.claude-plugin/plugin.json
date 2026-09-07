@@ -1,0 +1,22 @@
+{
+  "name": "sentient-security-audit",
+  "description": "Security review, dependency scanning, policy gates, and CVE monitoring",
+  "version": "0.2.1",
+  "author": {
+    "name": "sentient",
+    "url": "https://github.com/sentient"
+  },
+  "homepage": "https://github.com/sentient/sentient",
+  "license": "MIT",
+  "keywords": [
+    "sentient",
+    "security",
+    "audit",
+    "cve",
+    "scanning",
+    "mcp",
+    "cve-monitoring",
+    "policy-gates",
+    "shell-injection"
+  ]
+}
