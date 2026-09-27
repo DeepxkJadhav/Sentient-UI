@@ -1,20 +1,20 @@
 {
   "schema": "sentient-ecosystem-proof/v2",
-  "generated_at": "2026-09-14T12:59:43.141Z",
+  "generated_at": "2026-09-27T12:11:32.840Z",
   "sources": {
     "github_clones": "https://api.github.com/repos/{owner}/{repo}/traffic/clones (14-day rolling window)",
     "npm_downloads": "https://api.npmjs.org/downloads/range/last-year/{pkg}"
   },
   "latest_snapshot": {
-    "id": "2026-09-14T12:59:43.141Z-8a6fa271",
-    "captured_at": "2026-09-14T12:59:43.141Z",
+    "id": "2026-09-27T12:11:32.840Z-2417de4c",
+    "captured_at": "2026-09-27T12:11:32.840Z",
     "clones_14d": 0,
     "unique_cloners_14d": 0,
-    "npm_downloads_12mo_headline": 9764464,
-    "headline": "9.8M npm downloads · 0k git clones (14d)"
+    "npm_downloads_12mo_headline": 10367598,
+    "headline": "10.4M npm downloads · 0k git clones (14d)"
   },
-  "ledger_snapshot_count": 14,
-  "ledger_sha256": "117b507153f0a739ebc134c5cb04f63e922b6948e3708335d9fd29b3d65e73b1",
+  "ledger_snapshot_count": 15,
+  "ledger_sha256": "dcabe0514aefb23314f823ba84aaf8ac59d00f184dc90e361b31ed2cacb1a778",
   "ledger_path": "data/clone-data.ledger.json",
   "rvf_path": "data/clone-data.rvf"
 }
