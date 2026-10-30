@@ -51,7 +51,7 @@ export const mcpExamples: RouterExample[] = [
 	{
 		title: "Analyze a diff",
 		prompt:
-			"Use sentient__analyze_diff to assess risk and sentient__analyze_diff-reviewers to suggest reviewers for the PR at github.com/sentient/sentient/pull/1687.",
+			"Use sentient__analyze_diff to assess risk and sentient__analyze_diff-reviewers to suggest reviewers for the PR at github.com/DeepxkJadhav/Sentient-UI/pull/1687.",
 		followUps: [
 			{
 				title: "Repo metrics",

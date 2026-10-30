@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Sentient Installer (formerly Claude Flow)
-# https://github.com/sentient/sentient
+# https://github.com/DeepxkJadhav/Sentient-UI
 #
 # Usage:
 #   curl -fsSL https://cdn.jsdelivr.net/gh/sentient/claude-flow@main/scripts/install.sh | bash
@@ -304,8 +304,8 @@ show_quickstart() {
     fi
 
     echo ""
-    echo -e "${DIM}Documentation: https://github.com/sentient/sentient${NC}"
-    echo -e "${DIM}Issues: https://github.com/sentient/sentient/issues${NC}"
+    echo -e "${DIM}Documentation: https://github.com/DeepxkJadhav/Sentient-UI${NC}"
+    echo -e "${DIM}Issues: https://github.com/DeepxkJadhav/Sentient-UI/issues${NC}"
     echo ""
 }
 

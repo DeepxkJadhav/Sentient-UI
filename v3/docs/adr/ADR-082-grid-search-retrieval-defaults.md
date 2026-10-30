@@ -104,7 +104,7 @@ Rerank's trade-off: top-1/MRR/P3 up, nDCG@3/top-3 marginally down. Net: positive
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Pretrain

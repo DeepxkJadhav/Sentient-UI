@@ -2,8 +2,8 @@
 
 **Status**: Accepted — Implemented in sentient 3.10.14
 **Date**: 2026-05-30
-**Tracking issue**: [#2245](https://github.com/sentient/sentient/issues/2245)
-**Companion**: ADR-143 (deterministic Tier-1 codemods — same claims-vs-reality pattern), ADR-073 (agentdb SOTA — also a claims-vs-reality round), [sentient/sentient#2241](https://github.com/sentient/sentient/issues/2241) Dream-Cycle research (Structured Distillation is the natural Round-2 enhancement to this work)
+**Tracking issue**: [#2245](https://github.com/DeepxkJadhav/Sentient-UI/issues/2245)
+**Companion**: ADR-143 (deterministic Tier-1 codemods — same claims-vs-reality pattern), ADR-073 (agentdb SOTA — also a claims-vs-reality round), [sentient/sentient#2241](https://github.com/DeepxkJadhav/Sentient-UI/issues/2241) Dream-Cycle research (Structured Distillation is the natural Round-2 enhancement to this work)
 
 ## Context
 

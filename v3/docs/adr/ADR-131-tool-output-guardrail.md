@@ -2,7 +2,7 @@
 
 **Status**: Accepted
 **Date**: 2026-05-26
-**Issue**: [sentient/sentient#2149](https://github.com/sentient/sentient/issues/2149)
+**Issue**: [sentient/sentient#2149](https://github.com/DeepxkJadhav/Sentient-UI/issues/2149)
 **Related**: OWASP Top 10 for Agentic Applications 2026 ASI01 (Goal Hijacking)
 
 ## Context

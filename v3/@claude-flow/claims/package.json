@@ -49,13 +49,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sentient/sentient.git",
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI.git",
     "directory": "v3/@claude-flow/claims"
   },
   "bugs": {
-    "url": "https://github.com/sentient/sentient/issues"
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI/issues"
   },
-  "homepage": "https://github.com/sentient/sentient#readme",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI#readme",
   "dependencies": {
     "zod": "^3.22.4"
   },

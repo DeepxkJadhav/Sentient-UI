@@ -851,8 +851,8 @@ npx claude-flow skill run github-multi-repo cross-team \
 
 ## Support and Resources
 
-- Documentation: https://github.com/sentient/sentient
-- Issues: https://github.com/sentient/sentient/issues
+- Documentation: https://github.com/DeepxkJadhav/Sentient-UI
+- Issues: https://github.com/DeepxkJadhav/Sentient-UI/issues
 - Examples: `.claude/examples/github-multi-repo/`
 
 ---

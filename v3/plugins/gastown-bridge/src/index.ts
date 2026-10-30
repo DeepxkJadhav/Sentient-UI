@@ -974,7 +974,7 @@ export class GasTownBridgePlugin extends EventEmitter implements IPlugin {
       description: this.description,
       author: 'rUv',
       license: 'MIT',
-      repository: 'https://github.com/sentient/sentient',
+      repository: 'https://github.com/DeepxkJadhav/Sentient-UI',
       keywords: [
         'claude-flow',
         'plugin',

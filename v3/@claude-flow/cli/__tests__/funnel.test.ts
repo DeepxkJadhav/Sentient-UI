@@ -181,7 +181,7 @@ describe('message content boundaries (ADR-301)', () => {
 
   it('URL allowlist: exact hosts only, https only, no lookalikes', () => {
     expect(isAllowedUrl('https://cognitum.one/routing')).toBe(true);
-    expect(isAllowedUrl('https://github.com/sentient/sentient')).toBe(true);
+    expect(isAllowedUrl('https://github.com/DeepxkJadhav/Sentient-UI')).toBe(true);
     expect(isAllowedUrl('http://cognitum.one')).toBe(false); // not https
     expect(isAllowedUrl('https://cognitum.one.evil.com')).toBe(false); // lookalike
     expect(isAllowedUrl('https://evilcognitum.one')).toBe(false);

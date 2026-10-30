@@ -12,7 +12,7 @@ We just shipped `sentient@3.11.0` (also `@claude-flow/cli@3.11.0`, `claude-flow@
 
 Three signals make this the right time to commit a broader integration:
 
-1. **MetaHarness is first-party.** Same author (`ruv@ruv.net`), same ADR numbering convention (kernel docs reference ADR-011/022/033/036/040/041/043), explicit framing: *"Scaffold your own focused AI agent harness — like sentient, uniquely yours."* The `buildRegistryEntry()` doc comment says: *"Mirrors the sentient plugin registry shape so the same UI can browse it."* The `@metaharness/host-claude-code` adapter emits `.claude/settings.json` in exactly sentient's format.
+1. **MetaHarness is first-party.** Same author (`developer@sentient-ui.local`), same ADR numbering convention (kernel docs reference ADR-011/022/033/036/040/041/043), explicit framing: *"Scaffold your own focused AI agent harness — like sentient, uniquely yours."* The `buildRegistryEntry()` doc comment says: *"Mirrors the sentient plugin registry shape so the same UI can browse it."* The `@metaharness/host-claude-code` adapter emits `.claude/settings.json` in exactly sentient's format.
 2. **The router integration is already live but underutilized.** `@metaharness/router@^0.3.2` is in `optionalDependencies`; `neural-router.ts` imports it behind `CLAUDE_FLOW_ROUTER_NEURAL=1`. The bundled KRR is trained on hand-coded seed scores rather than measured routing outcomes — leaving the DRACO Pareto win unrealized.
 3. **No sentient skill exposes scaffolding/score/genome/threat-model to Claude Code today.** Users discover MetaHarness independently and are confused about the relationship.
 
@@ -584,7 +584,7 @@ npm registry, asserting graceful degradation).
 ## References
 
 - [Research dossier (gist)](https://gist.github.com/sentient/19d166ff9acf368c9da4172d91ac9113) — full graded-evidence sourcing.
-- [Tracking issue #2399](https://github.com/sentient/sentient/issues/2399) — phase checklist.
+- [Tracking issue #2399](https://github.com/DeepxkJadhav/Sentient-UI/issues/2399) — phase checklist.
 - ADR-148 — Cost-optimal router lifecycle via `@metaharness/router`.
 - ADR-149 — Per-model cost-optimal routing (Pareto framing).
 - ADR-097 — Federation budget circuit breaker (cost-spend telemetry pattern reused by metaharness plugin).

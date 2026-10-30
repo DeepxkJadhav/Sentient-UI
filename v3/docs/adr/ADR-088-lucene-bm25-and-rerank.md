@@ -105,7 +105,7 @@ This matches the published literature on hybrid retrieval — reranking helps mo
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Re-use NFCorpus + SciFact caches from ADR-085 (or re-ingest if needed)

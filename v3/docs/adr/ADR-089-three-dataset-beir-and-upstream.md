@@ -128,7 +128,7 @@ Measured parallel-embedder throughput on this CPU: **6.2× per-doc speedup** (cl
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # 3 BEIR datasets — each ingests once, caches, then evals fast on subsequent runs

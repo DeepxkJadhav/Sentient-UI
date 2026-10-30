@@ -72,7 +72,7 @@ The "type penalty disabled by default" decision was driven by the ablation, not 
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Unit tests — 39 tests (21 from ADR-078 + 18 new)

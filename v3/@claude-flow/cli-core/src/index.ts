@@ -121,7 +121,7 @@ Storage:
 Programmatic use:
   import { JsonMemoryBackend, runMemoryCommand } from '@claude-flow/cli-core';
 
-Track progress: https://github.com/sentient/sentient/issues/1760`);
+Track progress: https://github.com/DeepxkJadhav/Sentient-UI/issues/1760`);
     process.exit(0);
   }
 

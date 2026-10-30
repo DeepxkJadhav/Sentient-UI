@@ -82,7 +82,7 @@ This is the difference between "tuned to a benchmark" and "actually works." ADRs
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Pretrain agentdb in a temp dir

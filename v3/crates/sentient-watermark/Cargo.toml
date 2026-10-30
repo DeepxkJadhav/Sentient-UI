@@ -13,7 +13,7 @@ edition = "2021"
 rust-version = "1.74"
 license = "MIT"
 description = "High-speed SynthID-Text-style LLM text watermarking (Tournament + distortion-free Gumbel) with Bayesian detection and a robustness-evaluation harness. Rust core + optional WASM bindings."
-repository = "https://github.com/sentient/sentient"
+repository = "https://github.com/DeepxkJadhav/Sentient-UI"
 keywords = ["watermark", "llm", "synthid", "provenance", "wasm"]
 categories = ["algorithms", "text-processing", "wasm"]
 

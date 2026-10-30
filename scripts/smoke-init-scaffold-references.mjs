@@ -349,8 +349,8 @@ for (const { id, name, violations } of results) {
 
 console.log();
 console.log(`total: ${totalViolations} violation(s) across 4 checks`);
-console.log('ADR-382: https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-382-init-scaffold-content-drift-remediation.md');
-console.log('Issue: https://github.com/sentient/sentient/issues/2971');
+console.log('ADR-382: https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-382-init-scaffold-content-drift-remediation.md');
+console.log('Issue: https://github.com/DeepxkJadhav/Sentient-UI/issues/2971');
 
 if (totalViolations > 0 && !STRICT) {
   console.log('\nwarn-only mode: exiting 0 despite violations above. Pass --strict to make this blocking.');

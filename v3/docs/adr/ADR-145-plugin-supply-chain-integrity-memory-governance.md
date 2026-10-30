@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Date**: 2026-06-02
-**Issue**: [sentient/sentient#2254](https://github.com/sentient/sentient/issues/2254)
+**Issue**: [sentient/sentient#2254](https://github.com/DeepxkJadhav/Sentient-UI/issues/2254)
 **Related**: ADR-004 (Plugin Architecture), ADR-006 (Unified Memory), ADR-015 (Unified Plugin System), ADR-131 (ToolOutputGuardrail — content layer), ADR-144 (Authorization Propagation — runtime layer)
 
 ## Context

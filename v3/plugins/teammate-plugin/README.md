@@ -663,7 +663,7 @@ This plugin is published to the Claude Flow Plugin Registry on IPFS for decentra
   "description": "Native TeammateTool integration for Claude Code v2.1.19+",
   "author": "Claude Flow Team",
   "license": "MIT",
-  "repository": "https://github.com/sentient/sentient",
+  "repository": "https://github.com/DeepxkJadhav/Sentient-UI",
   "keywords": ["claude-code", "teammate", "multi-agent", "swarm"],
   "requirements": {
     "claudeCode": ">=2.1.19",
@@ -708,6 +708,6 @@ MIT
 
 ## Related
 
-- [Claude Flow](https://github.com/sentient/sentient) - Multi-agent orchestration framework
+- [Claude Flow](https://github.com/DeepxkJadhav/Sentient-UI) - Multi-agent orchestration framework
 - [Claude Code](https://github.com/anthropics/claude-code) - Anthropic's CLI for Claude
 - [ADR-027](../implementation/adrs/ADR-027-teammate-tool-integration.md) - Architecture decision record

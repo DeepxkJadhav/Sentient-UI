@@ -696,10 +696,10 @@ npx claude-flow hive-mind spawn "Review PR #456" \
 
 ## References
 
-- [Hive Mind Documentation](https://github.com/sentient/sentient/docs/hive-mind)
-- [Collective Intelligence Patterns](https://github.com/sentient/sentient/docs/patterns)
-- [Byzantine Consensus](https://github.com/sentient/sentient/docs/consensus)
-- [Memory Optimization](https://github.com/sentient/sentient/docs/memory)
+- [Hive Mind Documentation](https://github.com/DeepxkJadhav/Sentient-UI/docs/hive-mind)
+- [Collective Intelligence Patterns](https://github.com/DeepxkJadhav/Sentient-UI/docs/patterns)
+- [Byzantine Consensus](https://github.com/DeepxkJadhav/Sentient-UI/docs/consensus)
+- [Memory Optimization](https://github.com/DeepxkJadhav/Sentient-UI/docs/memory)
 
 ---
 

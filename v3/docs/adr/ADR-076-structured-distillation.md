@@ -2,7 +2,7 @@
 
 **Status**: Accepted — Implemented in sentient 3.10.16
 **Date**: 2026-05-30
-**Tracking**: [#2241](https://github.com/sentient/sentient/issues/2241) — Dream Cycle 2026-05-30 performance scan
+**Tracking**: [#2241](https://github.com/DeepxkJadhav/Sentient-UI/issues/2241) — Dream Cycle 2026-05-30 performance scan
 **Paper**: arXiv:2603.13017 (Grade A, March 2026) — "Structured Distillation of Agent Exchanges: 4-field schema for 11× compression and improved retrieval MRR"
 
 ## Context
@@ -81,7 +81,7 @@ The **direction matches the paper** (distilled improves MRR); the **relative del
 ## Reproduce
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc -b )
 
 # Schema + extractor tests

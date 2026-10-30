@@ -705,7 +705,7 @@ Skills are invoked using \`$skill-name\` syntax. Each skill has:
 
 - Main instructions: \`AGENTS.md\` (project root)
 - Local overrides: \`.codex/AGENTS.override.md\` (gitignored)
-- Sentient: https://github.com/sentient/sentient
+- Sentient: https://github.com/DeepxkJadhav/Sentient-UI
 `;
   }
 

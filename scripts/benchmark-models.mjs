@@ -29,7 +29,7 @@
  * OUTPUT: markdown to stdout + JSON after `===BENCH_JSON===`. Writes a
  * timestamped copy under docs/benchmarks/runs/cheap-models-*.{txt,json}.
  *
- * Co-Authored-By: Sentient <ruv@ruv.net>
+ * Co-Authored-By: Sentient <developer@sentient-ui.local>
  */
 
 import { mkdirSync, writeFileSync } from 'node:fs';
@@ -214,7 +214,7 @@ async function callOpenRouter(modelId, userPrompt, apiKey) {
     headers: {
       'Authorization': `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://github.com/sentient/sentient',
+      'HTTP-Referer': 'https://github.com/DeepxkJadhav/Sentient-UI',
       'X-Title': 'sentient-benchmark-models',
     },
     body: JSON.stringify({

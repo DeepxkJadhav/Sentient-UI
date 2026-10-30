@@ -122,4 +122,4 @@ Per-capability witness signing for the full 300-tool / 49-command surface is in 
 | Architecture decisions | [`v3/docs/adr/`](../v3/docs/adr/) — ADR-093, ADR-095, ADR-096, ADR-097 are the recent ones |
 | Cryptographic proof of build correctness | [`verification.md`](../verification.md) + [`sentient verify`](#verification) |
 | Plugin development | [`USERGUIDE.md` → Plugin section](USERGUIDE.md#-ecosystem--integrations) |
-| Open issues + roadmap | [GitHub Issues](https://github.com/sentient/sentient/issues) |
+| Open issues + roadmap | [GitHub Issues](https://github.com/DeepxkJadhav/Sentient-UI/issues) |

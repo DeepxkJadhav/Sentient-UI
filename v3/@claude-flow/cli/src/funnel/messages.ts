@@ -175,7 +175,7 @@ export const MESSAGES: FunnelMessage[] = [
     id: 'local.edu.adr-index',
     class: 'educational',
     text: '📚 sentient adr index — every architecture decision indexed and searchable',
-    url: 'https://github.com/sentient/sentient/tree/main/docs/adr',
+    url: 'https://github.com/DeepxkJadhav/Sentient-UI/tree/main/docs/adr',
   },
   {
     schemaVersion: 1,

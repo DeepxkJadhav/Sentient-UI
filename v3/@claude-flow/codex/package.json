@@ -76,12 +76,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sentient/sentient.git",
+    "url": "git+https://github.com/DeepxkJadhav/Sentient-UI.git",
     "directory": "v3/@claude-flow/codex"
   },
-  "homepage": "https://github.com/sentient/sentient#readme",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI#readme",
   "bugs": {
-    "url": "https://github.com/sentient/sentient/issues"
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI/issues"
   },
   "engines": {
     "node": ">=18"

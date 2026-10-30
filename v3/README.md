@@ -2,7 +2,7 @@
 
 > **Modular AI Agent Coordination System** - A complete reimagining of Claude-Flow with 15-agent hierarchical mesh swarm coordination.
 
-[![Version](https://img.shields.io/badge/version-3.0.0--alpha.1-blue.svg)](https://github.com/sentient/sentient)
+[![Version](https://img.shields.io/badge/version-3.0.0--alpha.1-blue.svg)](https://github.com/DeepxkJadhav/Sentient-UI)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D20.0.0-green.svg)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue.svg)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/license-MIT-purple.svg)](../LICENSE)
@@ -398,7 +398,7 @@ Features:
 
 ```bash
 # Clone the repository
-git clone https://github.com/sentient/sentient.git
+git clone https://github.com/DeepxkJadhav/Sentient-UI.git
 cd claude-flow/v3
 
 # Install dependencies
@@ -474,7 +474,7 @@ pnpm test:coverage
 - [Hooks Tools](./mcp/tools/hooks-tools.ts)
 
 ### External
-- [GitHub Repository](https://github.com/sentient/sentient)
+- [GitHub Repository](https://github.com/DeepxkJadhav/Sentient-UI)
 - [agentic-flow Integration](https://github.com/sentient/agentic-flow)
 - [AgentDB](https://github.com/sentient/agentdb)
 

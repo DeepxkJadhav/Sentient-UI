@@ -6,7 +6,7 @@
     "name": "sentient",
     "url": "https://github.com/sentient"
   },
-  "homepage": "https://github.com/sentient/sentient",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI",
   "license": "MIT",
   "keywords": [
     "sentient",
@@ -23,5 +23,5 @@
     "adr-123"
   ],
   "categories": ["intelligence", "graph", "memory", "substrate"],
-  "repository": "https://github.com/sentient/sentient"
+  "repository": "https://github.com/DeepxkJadhav/Sentient-UI"
 }

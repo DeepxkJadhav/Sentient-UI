@@ -437,4 +437,4 @@ Add to your Claude settings (`~/.claude/settings.json`):
 
 ## License
 
-MIT © [Claude Flow Team](https://github.com/sentient/sentient)
+MIT © [Claude Flow Team](https://github.com/DeepxkJadhav/Sentient-UI)

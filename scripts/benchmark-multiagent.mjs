@@ -53,7 +53,7 @@
  *   2  config error or runner crash
  *
  * Created for the sentient perf benchmark suite (ADR-163).
- * Co-Authored-By: Sentient <ruv@ruv.net>
+ * Co-Authored-By: Sentient <developer@sentient-ui.local>
  */
 
 import { fileURLToPath } from 'node:url';

@@ -114,7 +114,7 @@ Public benchmark (BEIR NFCorpus) is different — a standardised zero-shot eval 
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Download BEIR NFCorpus

@@ -55,7 +55,7 @@ export function generateSettings(options: InitOptions): object {
   if (options.attribution === true) {
     settings.attribution = {
       commit: 'Co-Authored-By: sentient-bot <sentient-bot@users.noreply.github.com>',
-      pr: '🤖 Generated with [Sentient](https://github.com/sentient/sentient)',
+      pr: '🤖 Generated with [Sentient](https://github.com/DeepxkJadhav/Sentient-UI)',
     };
   }
 

@@ -134,7 +134,7 @@ A sub-ADR that breaks any of these is a breaking change that requires its own me
 ## References
 
 - [ADR-150](ADR-150-metaharness-integration-surfaces.md) — Phase 1+2 implementation (32 /loop iterations on `feat/metaharness-integration-research`)
-- [Issue #2399](https://github.com/sentient/sentient/issues/2399) — phase tracker
+- [Issue #2399](https://github.com/DeepxkJadhav/Sentient-UI/issues/2399) — phase tracker
 - [Research dossier](https://gist.github.com/sentient/19d166ff9acf368c9da4172d91ac9113) — graded evidence per claim
 - [OIA implementation walkthrough](https://gist.github.com/sentient/9056701d13d5a5b5148d0459ff10b7c3) — plain-language guide
 - [`sentient/agent-harness-generator`](https://github.com/sentient/agent-harness-generator) — upstream MetaHarness

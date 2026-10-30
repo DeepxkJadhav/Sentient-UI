@@ -2,7 +2,7 @@
 
 **Status**: Accepted — Implemented in sentient 3.10.15
 **Date**: 2026-05-30
-**Tracking**: [#2245](https://github.com/sentient/sentient/issues/2245) — self-learning subsystem audit
+**Tracking**: [#2245](https://github.com/DeepxkJadhav/Sentient-UI/issues/2245) — self-learning subsystem audit
 **Supersedes**: the "future-rounds" item in ADR-074 §"Deliberately NOT in this round" titled *"Unify the 4 stat sources"*
 
 ## Context
@@ -92,7 +92,7 @@ This is the same shape as the per-handler `learningPath`/`note` design from ADR-
 ## Reproduce
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc -b )
 
 # Cross-store consistency tests

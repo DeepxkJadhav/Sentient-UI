@@ -194,7 +194,7 @@ Mapped via Cloudflare DNS (CNAME unproxied so Google manages the cert):
 - `cloudbuild.yaml` deploy step strips its `--set-env-vars` / `--set-secrets` flags so subsequent rebuilds preserve manually configured env (DOTENV_LOCAL with `MODELS`, `OPENAI_BASE_URL`, etc.). Initial env config is now set out-of-band via `gcloud run services update`.
 - `DOCKER_BUILDKIT=1` env on the cloudbuild docker step (Dockerfile uses `COPY --link` BuildKit syntax).
 
-## Follow-Up Work (tracked separately in [issue #1689](https://github.com/sentient/sentient/issues/1689))
+## Follow-Up Work (tracked separately in [issue #1689](https://github.com/DeepxkJadhav/Sentient-UI/issues/1689))
 
 | Priority | Item | Notes |
 |----------|------|-------|
@@ -211,8 +211,8 @@ Mapped via Cloudflare DNS (CNAME unproxied so Google manages the cert):
 - Upstream source: `https://github.com/sentient/ruvector` → `ui/ruvocal/`
 - Local target: `sentient/src/ruvocal/`
 - Branch: `feat/ruvocal-wasm-mcp-integration` (squash-merged to `main`)
-- PR: https://github.com/sentient/sentient/pull/1687
-- Follow-up issue: https://github.com/sentient/sentient/issues/1689
+- PR: https://github.com/DeepxkJadhav/Sentient-UI/pull/1687
+- Follow-up issue: https://github.com/DeepxkJadhav/Sentient-UI/issues/1689
 - Cloud Build configs: `sentient/src/ruvocal/cloudbuild.yaml`, `sentient/src/ruvocal/mcp-bridge/cloudbuild.yaml`
 - `.gcloudignore` (CRITICAL — see resolved root cause): `sentient/src/ruvocal/.gcloudignore`
 - Web Worker: `sentient/src/ruvocal/src/lib/wasm/{wasm.worker.ts,workerClient.ts}`

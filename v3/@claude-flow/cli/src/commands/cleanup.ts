@@ -14,7 +14,7 @@ import { join } from 'path';
  * Sentient-owned subdirectories within .claude/ that are safe to delete.
  * Everything else in .claude/ (agents, skills, commands, settings.local.json,
  * memory.db, worktrees, launch.json) belongs to Claude Code and must be preserved.
- * See: https://github.com/sentient/sentient/issues/1557
+ * See: https://github.com/DeepxkJadhav/Sentient-UI/issues/1557
  */
 const CLAUDE_OWNED_SUBDIRS = [
   { path: join('.claude', 'helpers'), description: 'Sentient hook scripts' },

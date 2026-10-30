@@ -1784,7 +1784,7 @@ async function writeCapabilitiesDoc(
 
   const capabilities = `# Sentient V3 - Complete Capabilities Reference
 > Generated: ${new Date().toISOString()}
-> Full documentation: https://github.com/sentient/sentient
+> Full documentation: https://github.com/DeepxkJadhav/Sentient-UI
 
 ## 📋 Table of Contents
 
@@ -2183,8 +2183,8 @@ npx sentient@latest hooks worker dispatch --trigger optimize
 
 ---
 
-**Full Documentation**: https://github.com/sentient/sentient
-**Issues**: https://github.com/sentient/sentient/issues
+**Full Documentation**: https://github.com/DeepxkJadhav/Sentient-UI
+**Issues**: https://github.com/DeepxkJadhav/Sentient-UI/issues
 `;
 
   fs.writeFileSync(capabilitiesPath, capabilities, 'utf-8');

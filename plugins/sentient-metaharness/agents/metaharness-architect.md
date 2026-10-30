@@ -53,6 +53,6 @@ needs its own ADR.
 ## Cross-links
 
 - [ADR-150](../../../v3/docs/adr/ADR-150-metaharness-integration-surfaces.md) — decision
-- [Issue #2399](https://github.com/sentient/sentient/issues/2399) — phase tracker
+- [Issue #2399](https://github.com/DeepxkJadhav/Sentient-UI/issues/2399) — phase tracker
 - [Research dossier](https://gist.github.com/sentient/19d166ff9acf368c9da4172d91ac9113) — graded evidence
 - [Upstream](https://github.com/sentient/agent-harness-generator) — `metaharness` source

@@ -957,10 +957,10 @@ mcp__claude-flow__swarm_init({ topology: "mesh", maxAgents: 4 })
 
 ## References
 
-- [Claude Flow Documentation](https://github.com/sentient/sentient)
-- [Swarm Orchestration Guide](https://github.com/sentient/sentient/wiki/swarm)
-- [MCP Tools Reference](https://github.com/sentient/sentient/wiki/mcp)
-- [Performance Optimization](https://github.com/sentient/sentient/wiki/performance)
+- [Claude Flow Documentation](https://github.com/DeepxkJadhav/Sentient-UI)
+- [Swarm Orchestration Guide](https://github.com/DeepxkJadhav/Sentient-UI/wiki/swarm)
+- [MCP Tools Reference](https://github.com/DeepxkJadhav/Sentient-UI/wiki/mcp)
+- [Performance Optimization](https://github.com/DeepxkJadhav/Sentient-UI/wiki/performance)
 
 ---
 

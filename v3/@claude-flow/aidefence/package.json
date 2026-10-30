@@ -59,13 +59,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sentient/sentient.git",
+    "url": "git+https://github.com/DeepxkJadhav/Sentient-UI.git",
     "directory": "v3/@claude-flow/aidefence"
   },
   "bugs": {
-    "url": "https://github.com/sentient/sentient/issues"
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI/issues"
   },
-  "homepage": "https://github.com/sentient/sentient/tree/main/v3/@claude-flow/aidefence#readme",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI/tree/main/v3/@claude-flow/aidefence#readme",
   "publishConfig": {
     "access": "public",
     "tag": "alpha"

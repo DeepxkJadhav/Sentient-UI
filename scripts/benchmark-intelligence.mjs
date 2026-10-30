@@ -39,7 +39,7 @@
  *   node scripts/benchmark-intelligence.mjs --queries 50 --dims 384
  *   node scripts/benchmark-intelligence.mjs --json-only
  *
- * Created for the sentient intelligence stack. Co-Authored-By: Sentient <ruv@ruv.net>
+ * Created for the sentient intelligence stack. Co-Authored-By: Sentient <developer@sentient-ui.local>
  */
 
 import { fileURLToPath } from 'node:url';

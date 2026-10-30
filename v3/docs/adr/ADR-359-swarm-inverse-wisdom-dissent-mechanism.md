@@ -72,5 +72,5 @@ Estimated effort: 1 sprint (3-4 days).
 
 - Shehata & Li (2026). *Inverse-Wisdom Law in Multi-Agent LLM Consensus*. arXiv:2604.27274
 - arXiv:2605.10698 — Bystander Effect in LLM Swarms (companion paper)
-- [Dream Cycle Issue #2559](https://github.com/sentient/sentient/issues/2559)
+- [Dream Cycle Issue #2559](https://github.com/DeepxkJadhav/Sentient-UI/issues/2559)
 - [Gist: Swarm SOTA Report 2026-07-04](https://gist.github.com/sentient) *(URL added after publication)*

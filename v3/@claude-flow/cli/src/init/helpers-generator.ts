@@ -12,7 +12,7 @@ import { generateStatuslineScript, generateStatuslineHook } from './statusline-g
 // PR body templates and release notes.  It is NEVER hard-wired into the
 // static command-file templates — those are user-owned content.
 export const ATTRIBUTION_FOOTER =
-  '🤖 Generated with [Sentient](https://github.com/sentient/sentient)';
+  '🤖 Generated with [Sentient](https://github.com/DeepxkJadhav/Sentient-UI)';
 
 /**
  * Detect whether a Claude Code PostToolUse payload represents a FAILED tool run.

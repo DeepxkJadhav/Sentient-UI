@@ -16,6 +16,8 @@ output/
 *.db
 *.db-wal
 *.db-journal
+*.rvf
+*.rvf.lock
 .claude-flow/data/
 .claude-flow/logs/
 node-compile-cache/

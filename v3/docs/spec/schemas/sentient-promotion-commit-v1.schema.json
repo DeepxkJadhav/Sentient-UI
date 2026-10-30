@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/sentient/sentient/v3/docs/spec/schemas/sentient-promotion-commit-v1.schema.json",
+  "$id": "https://github.com/DeepxkJadhav/Sentient-UI/v3/docs/spec/schemas/sentient-promotion-commit-v1.schema.json",
   "title": "SentientPromotionCommitV1",
   "description": "Promotion commit and resulting ledger head. ADR-322C section Ledger specifies content-addressed segments with a segmentMerkleRoot and a head signed under sentient/flywheel-ledger-head/v1; this schema describes what is actually implemented on main (flywheel-transaction.ts:553-568) - a flat, sequence-numbered commit chain whose head is an UNSIGNED SHA-256 chain value. See witness-receipt-contract.md gap G2 before anchoring a head across a repo boundary.",
   "type": "object",

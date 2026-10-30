@@ -57,8 +57,8 @@ export const pluginMetadata = {
   author: 'Claude Flow Team',
   category: 'legal',
   keywords: ['legal', 'contracts', 'clause', 'risk', 'compliance'],
-  homepage: 'https://github.com/sentient/sentient',
-  repository: 'https://github.com/sentient/sentient.git',
+  homepage: 'https://github.com/DeepxkJadhav/Sentient-UI',
+  repository: 'https://github.com/DeepxkJadhav/Sentient-UI.git',
 };
 
 /**

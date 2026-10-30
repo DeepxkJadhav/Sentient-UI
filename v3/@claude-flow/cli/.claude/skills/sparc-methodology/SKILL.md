@@ -1057,8 +1057,8 @@ mcp__claude-flow__token_usage {
 
 ## Support and Resources
 
-- **Documentation**: https://github.com/sentient/sentient
-- **Issues**: https://github.com/sentient/sentient/issues
+- **Documentation**: https://github.com/DeepxkJadhav/Sentient-UI
+- **Issues**: https://github.com/DeepxkJadhav/Sentient-UI/issues
 - **NPM Package**: https://www.npmjs.com/package/claude-flow
 - **Community**: Discord server (link in repository)
 

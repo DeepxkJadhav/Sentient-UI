@@ -81,7 +81,7 @@ This is a real finding from running 4 datasets, not a guess. Worth a separate ex
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 mkdir -p /tmp/beir-scidocs && cd /tmp/beir-scidocs

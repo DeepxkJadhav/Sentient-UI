@@ -4,7 +4,7 @@
 
 [![Try the Web UI — flo.sentient.io](https://img.shields.io/badge/✨_Try_it-flo.sentient.io-6366f1?style=for-the-badge&logo=svelte&logoColor=white)](https://flo.sentient.io/)
 
-RuVocal is the SvelteKit web app that lets you chat with Qwen, Claude, Gemini, or OpenAI while [Sentient](https://github.com/sentient/sentient) invokes the same ~210 MCP tools the CLI uses — agent orchestration, persistent memory, swarm coordination, code review, GitHub ops — all directly from chat. No install, no API key needed to try the hosted demo.
+RuVocal is the SvelteKit web app that lets you chat with Qwen, Claude, Gemini, or OpenAI while [Sentient](https://github.com/DeepxkJadhav/Sentient-UI) invokes the same ~210 MCP tools the CLI uses — agent orchestration, persistent memory, swarm coordination, code review, GitHub ops — all directly from chat. No install, no API key needed to try the hosted demo.
 
 It started as a fork of the [HuggingFace chat-ui](https://github.com/huggingface/chat-ui) v0.20.0 and has been extended with a WASM-MCP integration layer, parallel tool execution, an in-browser tool gallery, and a "Sentient Capabilities" tour modal. See [ADR-033](../../docs/adr/ADR-033-RUVOCAL-WASM-MCP-INTEGRATION.md) for the architecture.
 
@@ -30,7 +30,7 @@ It started as a fork of the [HuggingFace chat-ui](https://github.com/huggingface
 ### Local dev
 
 ```bash
-git clone https://github.com/sentient/sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI
 cd sentient/sentient/src/ruvocal
 cp .env .env.local        # then edit .env.local — see below
 npm install
@@ -153,12 +153,12 @@ For deeper internals, see [`CLAUDE.md`](./CLAUDE.md) (Claude Code agent guide) a
 
 ## Related
 
-- 🏠 **Parent project** — [Sentient](https://github.com/sentient/sentient)
+- 🏠 **Parent project** — [Sentient](https://github.com/DeepxkJadhav/Sentient-UI)
 - 🎯 **Goal Planner UI** — [goal.sentient.io](https://goal.sentient.io/) · [/agents](https://goal.sentient.io/agents)
 - 📖 **ADR-033** — RuVocal/WASM-MCP integration architecture
-- 📋 **Roadmap** — [issue #1689](https://github.com/sentient/sentient/issues/1689)
+- 📋 **Roadmap** — [issue #1689](https://github.com/DeepxkJadhav/Sentient-UI/issues/1689)
 - 🍴 **Upstream** — [huggingface/chat-ui](https://github.com/huggingface/chat-ui) (RuVocal is forked from v0.20.0)
 
 ## License
 
-MIT — same as the parent [Sentient](https://github.com/sentient/sentient) project.
+MIT — same as the parent [Sentient](https://github.com/DeepxkJadhav/Sentient-UI) project.

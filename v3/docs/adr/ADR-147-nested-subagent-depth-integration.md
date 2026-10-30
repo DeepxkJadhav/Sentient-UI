@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Date**: 2026-06-09
-**Issue**: [sentient/sentient#2335](https://github.com/sentient/sentient/issues/2335)
+**Issue**: [sentient/sentient#2335](https://github.com/DeepxkJadhav/Sentient-UI/issues/2335)
 **Related**: ADR-144 (Authorization Propagation — shares `delegationDepth`), ADR-099 (Dossier Investigator — recursive use case), ADR-143 (Deterministic Tier-1 Codemods — unaffected, stay at depth 0)
 
 ## Context

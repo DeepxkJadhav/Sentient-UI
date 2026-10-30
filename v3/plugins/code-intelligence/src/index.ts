@@ -58,8 +58,8 @@ export const pluginMetadata = {
   author: 'Claude Flow Team',
   category: 'code-intelligence',
   keywords: ['code', 'intelligence', 'semantic-search', 'architecture', 'refactoring'],
-  homepage: 'https://github.com/sentient/sentient',
-  repository: 'https://github.com/sentient/sentient.git',
+  homepage: 'https://github.com/DeepxkJadhav/Sentient-UI',
+  repository: 'https://github.com/DeepxkJadhav/Sentient-UI.git',
 };
 
 /**

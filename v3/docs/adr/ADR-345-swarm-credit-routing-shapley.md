@@ -3,7 +3,7 @@
 **Status**: Proposed
 **Date**: 2026-06-14
 **Authors**: claude (dream-cycle agent, 2026-06-14)
-**Issue**: [sentient/sentient#TBD](https://github.com/sentient/sentient/issues/) (filed tonight)
+**Issue**: [sentient/sentient#TBD](https://github.com/DeepxkJadhav/Sentient-UI/issues/) (filed tonight)
 **Related**: ADR-026 (3-Tier Model Routing), ADR-143 (Tier-1 Codemods), ADR-153 (RuVector Integration)
 
 ## Context

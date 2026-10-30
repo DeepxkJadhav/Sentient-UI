@@ -20,7 +20,7 @@
 //   BENCH_NO_WRITE=1 node scripts/pretrain-from-github.mjs  # don't write a run JSON
 //
 // Repro from a fresh checkout:
-//   git clone https://github.com/sentient/sentient && cd sentient
+//   git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 //   npm install && ( cd v3/@claude-flow/cli && npx tsc -b )
 //   node v3/@claude-flow/cli/scripts/pretrain-from-github.mjs
 

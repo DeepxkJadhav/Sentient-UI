@@ -42,7 +42,7 @@ export const pluginMetadata = {
   tags: ['testing', 'ci-optimization', 'machine-learning', 'coverage', 'mutation-testing'],
   author: 'Claude Flow Team',
   license: 'MIT',
-  repository: 'https://github.com/sentient/sentient',
+  repository: 'https://github.com/DeepxkJadhav/Sentient-UI',
   engines: {
     'claude-flow': '>=3.0.0-alpha.1',
     node: '>=18.0.0',

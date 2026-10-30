@@ -1,7 +1,7 @@
 # OWASP Top 10 for Agentic Applications 2026 — Sentient control mapping
 
 **Reference**: OWASP Gen AI Security Project, "OWASP Top 10 for Agentic Applications" (Dec 2025, 100+ contributors).
-**Issue**: [sentient/sentient#2149](https://github.com/sentient/sentient/issues/2149)
+**Issue**: [sentient/sentient#2149](https://github.com/DeepxkJadhav/Sentient-UI/issues/2149)
 **Last updated**: 2026-05-26
 
 ## Legend

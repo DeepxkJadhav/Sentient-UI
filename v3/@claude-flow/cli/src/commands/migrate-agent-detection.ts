@@ -4,7 +4,7 @@
  * template (each plugin is now canonical) and, when a project is missing one
  * AND the owning plugin isn't installed, surface an install suggestion.
  * See v3/docs/adr/ADR-382-init-scaffold-content-drift-remediation.md and
- * https://github.com/sentient/sentient/issues/2971.
+ * https://github.com/DeepxkJadhav/Sentient-UI/issues/2971.
  *
  * Kept in a sibling module (not migrate.ts) because migrate.ts is already
  * near/over the 500-line budget — see CLAUDE.md file-size rule.

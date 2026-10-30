@@ -3,7 +3,7 @@
 **Status**: Proposed
 **Date**: 2026-05-29
 **Authors**: claude (dream-cycle agent, 2026-05-29)
-**Issue**: [sentient/sentient#TBD](https://github.com/sentient/sentient/issues/)
+**Issue**: [sentient/sentient#TBD](https://github.com/DeepxkJadhav/Sentient-UI/issues/)
 **Related**: ADR-103 (witness temporal history), ADR-104 (federation wire transport)
 
 ## Context

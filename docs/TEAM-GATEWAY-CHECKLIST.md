@@ -2,7 +2,7 @@
 
 This checklist covers governance and safety gates for teams running Claude Code / Codex-style agent workflows through a shared gateway or proxy. It supersedes ad-hoc runbooks and is enforced by the before-merge CI gates listed below.
 
-Related: [#2058](https://github.com/sentient/sentient/issues/2058)
+Related: [#2058](https://github.com/DeepxkJadhav/Sentient-UI/issues/2058)
 
 ---
 

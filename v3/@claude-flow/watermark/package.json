@@ -3,15 +3,15 @@
   "version": "0.2.0",
   "description": "SynthID-Text-style LLM text watermarking (generation + detection) as a WASM module — Tournament / non-distortionary / distortion-free schemes, indel-robust and short-text detectors. Node + browser. No watermark-removal tooling.",
   "license": "MIT",
-  "author": "rUv <ruv@ruv.net>",
-  "homepage": "https://github.com/sentient/sentient/tree/main/v3/crates/sentient-watermark",
+  "author": "rUv <developer@sentient-ui.local>",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI/tree/main/v3/crates/sentient-watermark",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sentient/sentient.git",
+    "url": "git+https://github.com/DeepxkJadhav/Sentient-UI.git",
     "directory": "v3/@claude-flow/watermark"
   },
   "bugs": {
-    "url": "https://github.com/sentient/sentient/issues"
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI/issues"
   },
   "keywords": [
     "watermark",

@@ -1253,7 +1253,7 @@ npx ruv-swarm github board-kpis
 - [GitHub CLI Documentation](https://cli.github.com/manual/)
 - [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 - [Swarm Coordination Guide](https://github.com/sentient/ruv-swarm)
-- [Claude Flow Documentation](https://github.com/sentient/sentient)
+- [Claude Flow Documentation](https://github.com/DeepxkJadhav/Sentient-UI)
 
 ---
 

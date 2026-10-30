@@ -1,6 +1,6 @@
 # Sentient Research
 
-> Goal-Oriented Action Planning UI for autonomous AI research workflows. Part of the [Sentient](https://github.com/sentient/sentient) platform.
+> Goal-Oriented Action Planning UI for autonomous AI research workflows. Part of the [Sentient](https://github.com/DeepxkJadhav/Sentient-UI) platform.
 > Live: [goal.sentient.io](https://goal.sentient.io/) · Agents dashboard: [goal.sentient.io/agents](https://goal.sentient.io/agents)
 
 Turn plain-English research goals into executable agent plans. Sentient Research applies classic Goal-Oriented Action Planning (GOAP) — A* search through a state space of actions with preconditions and effects — to autonomous AI research, then dispatches the work to live agents you can inspect in real time.
@@ -83,4 +83,4 @@ VITE_SUPABASE_PUBLISHABLE_KEY=...
 
 ## License
 
-MIT — same as the parent [Sentient](https://github.com/sentient/sentient) project.
+MIT — same as the parent [Sentient](https://github.com/DeepxkJadhav/Sentient-UI) project.

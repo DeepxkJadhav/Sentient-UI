@@ -1,6 +1,6 @@
 # Self-Learning Wiring — Proof + Reproduction Guide (#2245)
 
-> Companion to [ADR-074](../adr/ADR-074-self-learning-wiring-2245.md) and [#2245](https://github.com/sentient/sentient/issues/2245).
+> Companion to [ADR-074](../adr/ADR-074-self-learning-wiring-2245.md) and [#2245](https://github.com/DeepxkJadhav/Sentient-UI/issues/2245).
 >
 > This document gives anyone the copy-paste commands needed to *verify the
 > learning system actually persists what it claims*, plus the multi-path map of
@@ -30,7 +30,7 @@ what it did and didn't do.
 ### One-shot benchmark
 
 ```bash
-git clone https://github.com/sentient/sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI
 cd sentient && npm install
 ( cd v3/@claude-flow/cli && npx tsc -b )
 

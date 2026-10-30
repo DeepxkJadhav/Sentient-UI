@@ -5,7 +5,7 @@ edition = "2021"
 rust-version = "1.85"
 description = "Single-process federation peer for sentient: midstreamer-quic transport composed with aimds-* 3-gate safety pipeline (ADR-120 Step 3)"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/sentient/sentient"
+repository = "https://github.com/DeepxkJadhav/Sentient-UI"
 keywords = ["sentient", "federation", "quic", "aimds", "agent"]
 categories = ["network-programming", "asynchronous"]
 

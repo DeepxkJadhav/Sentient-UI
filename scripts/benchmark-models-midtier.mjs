@@ -32,7 +32,7 @@
  * mid-class model. Default 7 models × 12 queries × 1 repeat + judges
  * projects to ~$0.20-0.40 USD. --max-cost gate defaults to $1.00.
  *
- * Co-Authored-By: Sentient <ruv@ruv.net>
+ * Co-Authored-By: Sentient <developer@sentient-ui.local>
  */
 
 import { mkdirSync, writeFileSync } from 'node:fs';
@@ -329,7 +329,7 @@ async function callOpenRouter(modelId, userPrompt, apiKey, opts = {}) {
     headers: {
       'Authorization': `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://github.com/sentient/sentient',
+      'HTTP-Referer': 'https://github.com/DeepxkJadhav/Sentient-UI',
       'X-Title': 'sentient-benchmark-midtier',
     },
     body: JSON.stringify({

@@ -184,7 +184,7 @@ counterpart to the leaderboard table in ADR-085.
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Re-run the NFCorpus bench with updated harness (writes perQuery to JSON)

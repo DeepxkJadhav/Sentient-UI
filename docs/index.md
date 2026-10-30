@@ -79,7 +79,7 @@ Sentient plugins use Claude Code's native capabilities when available:
 
 ## Links
 
-- [GitHub Repository](https://github.com/sentient/sentient)
+- [GitHub Repository](https://github.com/DeepxkJadhav/Sentient-UI)
 - [npm Packages](https://www.npmjs.com/package/@claude-flow/cli)
-- [ADR-091: Native Integration](https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-091-loop-monitor-native-integration.md)
-- [Issues & Support](https://github.com/sentient/sentient/issues)
+- [ADR-091: Native Integration](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-091-loop-monitor-native-integration.md)
+- [Issues & Support](https://github.com/DeepxkJadhav/Sentient-UI/issues)

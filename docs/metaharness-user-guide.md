@@ -463,7 +463,7 @@ Usually transient network ECONNRESET on sharp / onnxruntime-node postinstall. Re
 - **Eject command**: [`v3/@claude-flow/cli/src/commands/eject.ts`](../v3/@claude-flow/cli/src/commands/eject.ts)
 - **ADR**: [`v3/docs/adr/ADR-150-metaharness-integration-surfaces.md`](../v3/docs/adr/ADR-150-metaharness-integration-surfaces.md)
 - **ADR-152 §3.1 similarity**: [`v3/docs/adr/ADR-152-genome-similarity-search.md`](../v3/docs/adr/ADR-152-genome-similarity-search.md)
-- **Tracking issue**: [#2399](https://github.com/sentient/sentient/issues/2399)
+- **Tracking issue**: [#2399](https://github.com/DeepxkJadhav/Sentient-UI/issues/2399)
 - **Upstream**: [`github.com/sentient/agent-harness-generator`](https://github.com/sentient/agent-harness-generator)
 
 ## Cross-references

@@ -203,7 +203,7 @@ Three of four datasets pick a *different* best config. No single pipeline wins e
 ## How to reproduce
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # NFCorpus

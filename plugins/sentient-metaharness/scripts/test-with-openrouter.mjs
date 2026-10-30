@@ -91,7 +91,7 @@ async function cheapInferenceCall(apiKey) {
     headers: {
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://github.com/sentient/sentient',
+      'HTTP-Referer': 'https://github.com/DeepxkJadhav/Sentient-UI',
       'X-Title': 'sentient-metaharness-test',
     },
     body: JSON.stringify({

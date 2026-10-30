@@ -43,12 +43,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sentient/sentient.git",
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI.git",
     "directory": "v3/plugins/agentic-qe"
   },
-  "homepage": "https://github.com/sentient/sentient/tree/main/v3/plugins/agentic-qe",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI/tree/main/v3/plugins/agentic-qe",
   "bugs": {
-    "url": "https://github.com/sentient/sentient/issues"
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI/issues"
   },
   "dependencies": {
     "zod": "^3.23.0"

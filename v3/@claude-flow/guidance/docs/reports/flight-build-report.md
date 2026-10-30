@@ -230,7 +230,7 @@ npx ts-node -e "
 
 ## Links
 
-- **GitHub**: [github.com/sentient/sentient](https://github.com/sentient/sentient)
+- **GitHub**: [github.com/DeepxkJadhav/Sentient-UI](https://github.com/DeepxkJadhav/Sentient-UI)
 - **npm**: [@claude-flow/guidance](https://www.npmjs.com/package/@claude-flow/guidance)
 - **npm**: [claude-flow](https://www.npmjs.com/package/claude-flow)
 - **npm**: [ruvbot](https://www.npmjs.com/package/ruvbot)

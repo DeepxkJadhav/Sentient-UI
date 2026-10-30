@@ -121,7 +121,7 @@ export const pluginMetadata = {
   category: 'exotic',
   author: 'rUv',
   license: 'MIT',
-  repository: 'https://github.com/sentient/sentient',
+  repository: 'https://github.com/DeepxkJadhav/Sentient-UI',
   tools: [
     'hyperbolic_embed_hierarchy',
     'hyperbolic_taxonomic_reason',

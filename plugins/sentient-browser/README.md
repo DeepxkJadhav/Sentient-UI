@@ -4,7 +4,7 @@ Session-as-skill browser automation. Playwright-backed via 23 `mcp__plugin_senti
 
 > **v0.2.0 architecture** — every browser session is now an addressable, replayable, federatable artifact. Status is **Proposed** per [ADR-0001](./docs/adrs/0001-browser-skills-architecture.md); the load-bearing replay assumption requires a pre-Accept spike (see ADR Verification §4).
 >
-> **Substrate alignment (ADR-122).** This plugin is the user-facing skill layer; the substrate primitives — signed trajectories (Ed25519 + RVF), causal-graph self-healing, AIDefence-attested cookie vault, federated MCTS, Session Capsules, Workflow Compiler — ship in the [`@claude-flow/browser@3.0.0-alpha.4`](https://www.npmjs.com/package/@claude-flow/browser) npm package. See the [substrate announcement](https://gist.github.com/sentient/a708fafb1375ed69bc48377df47fa2ac) and tracking issue [#2041](https://github.com/sentient/sentient/issues/2041).
+> **Substrate alignment (ADR-122).** This plugin is the user-facing skill layer; the substrate primitives — signed trajectories (Ed25519 + RVF), causal-graph self-healing, AIDefence-attested cookie vault, federated MCTS, Session Capsules, Workflow Compiler — ship in the [`@claude-flow/browser@3.0.0-alpha.4`](https://www.npmjs.com/package/@claude-flow/browser) npm package. See the [substrate announcement](https://gist.github.com/sentient/a708fafb1375ed69bc48377df47fa2ac) and tracking issue [#2041](https://github.com/DeepxkJadhav/Sentient-UI/issues/2041).
 
 ## Install
 

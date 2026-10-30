@@ -1028,7 +1028,7 @@ echo "✅ GitHub workflow automation setup complete"
 
 - **GitHub CLI Docs**: https://cli.github.com/manual/
 - **GitHub Actions**: https://docs.github.com/en/actions
-- **Claude-Flow**: https://github.com/sentient/sentient
+- **Claude-Flow**: https://github.com/DeepxkJadhav/Sentient-UI
 - **Ruv-Swarm**: https://github.com/sentient/ruv-swarm
 
 ## Version History

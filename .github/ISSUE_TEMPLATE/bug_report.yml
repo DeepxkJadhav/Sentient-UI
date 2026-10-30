@@ -1,0 +1,42 @@
+name: 🐛 Bug Report
+description: Create a report to help us improve Sentient-UI
+title: "[BUG] <concise description>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue in **Sentient-UI**!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug encountered and what was expected instead.
+      placeholder: Tell us what you did and what went wrong...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the problem.
+      placeholder: |
+        1. Open Sentient-UI at http://localhost:3000
+        2. Click on 'Topology' and switch to Ring
+        3. See error...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment Info
+      description: Node version, OS, browser, etc.
+      placeholder: Node 20.12.0 / Windows 11 / Chrome 124
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or terminal output
+      description: Copy and paste relevant console errors or terminal output.
+      render: shell

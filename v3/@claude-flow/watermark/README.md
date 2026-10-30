@@ -7,7 +7,7 @@ out-of-distribution word, costs no extra tokens, and is detectable only by a
 holder of the secret key. Built for EU AI Act AI-content marking and for
 measuring watermark robustness.
 
-Backed by the Rust crate [`sentient-watermark`](https://github.com/sentient/sentient/tree/main/v3/crates/sentient-watermark).
+Backed by the Rust crate [`sentient-watermark`](https://github.com/DeepxkJadhav/Sentient-UI/tree/main/v3/crates/sentient-watermark).
 
 > This package intentionally ships **no watermark-removal / laundering tool**.
 > The legitimate way to produce un-marked output of your own model is not to

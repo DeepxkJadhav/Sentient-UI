@@ -103,7 +103,7 @@ export const PACKAGE_INFO = {
   version: VERSION,
   description: 'Codex CLI integration for Claude Flow',
   futureUmbrella: 'coflow',
-  repository: 'https://github.com/sentient/sentient',
+  repository: 'https://github.com/DeepxkJadhav/Sentient-UI',
 } as const;
 
 /**

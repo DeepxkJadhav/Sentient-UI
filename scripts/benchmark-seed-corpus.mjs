@@ -33,7 +33,7 @@
  * are longer (~200 input / ~400 output). Projected: ~$1-3 USD. Default
  * --max-cost gate is $5.00.
  *
- * Co-Authored-By: Sentient <ruv@ruv.net>
+ * Co-Authored-By: Sentient <developer@sentient-ui.local>
  */
 
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
@@ -265,7 +265,7 @@ async function callOR(modelId, prompt, apiKey, opts = {}) {
     headers: {
       'Authorization': `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://github.com/sentient/sentient',
+      'HTTP-Referer': 'https://github.com/DeepxkJadhav/Sentient-UI',
       'X-Title': 'sentient-benchmark-seed-corpus',
     },
     body: JSON.stringify({

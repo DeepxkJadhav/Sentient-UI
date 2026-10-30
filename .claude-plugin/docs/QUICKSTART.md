@@ -19,7 +19,7 @@ In Claude Code:
 
 ```bash
 # Clone the repository
-git clone https://github.com/sentient/sentient.git
+git clone https://github.com/DeepxkJadhav/Sentient-UI.git
 cd claude-flow
 ```
 

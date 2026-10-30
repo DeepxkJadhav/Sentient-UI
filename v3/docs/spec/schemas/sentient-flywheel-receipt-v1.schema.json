@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/sentient/sentient/v3/docs/spec/schemas/sentient-flywheel-receipt-v1.schema.json",
+  "$id": "https://github.com/DeepxkJadhav/Sentient-UI/v3/docs/spec/schemas/sentient-flywheel-receipt-v1.schema.json",
   "title": "SentientFlywheelReceiptV1",
   "description": "Evaluation receipt defined by ADR-322C. Structural validation only: schema conformance is necessary but NOT sufficient. A conforming record is valid only after the content-ID, signature, and statistical recomputation steps of witness-receipt-contract.md section 6.",
   "type": "object",

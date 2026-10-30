@@ -183,7 +183,7 @@ catches future regressions.
 ## Reproduce all the proofs in this repo
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc -b )
 
 # ⓐ Self-learning wiring (5 sections — primitives → MCP surfaces → multi-step)

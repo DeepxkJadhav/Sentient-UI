@@ -1,53 +1,42 @@
-# Security Policy
+# Security Policy — Sentient-UI
 
 ## Supported Versions
 
+We actively provide security patches and updates for the following versions:
+
 | Version | Supported          |
 |---------|--------------------|
-| 3.5.x   | Yes                |
-| 3.0-3.4 | No                 |
-| 2.x     | No                 |
+| 1.x     | :white_check_mark: |
+| < 1.0   | :x:                |
+
+---
 
 ## Reporting a Vulnerability
 
-**Do not open a public GitHub issue for security vulnerabilities.**
+We take the security of **Sentient-UI** seriously. If you discover a security vulnerability or potential threat within the codebase or dependencies, please report it responsibly.
 
-Please report vulnerabilities by emailing **security@cognitum.one**. Include the following in your report:
+### How to Report:
+1. **GitHub Security Advisory (Preferred)**:
+   Please report vulnerabilities privately via [GitHub Security Advisories](https://github.com/DeepxkJadhav/Sentient-UI/security/advisories/new).
+2. **Direct Contact**:
+   Alternatively, contact the maintainer directly through [GitHub Profile (@DeepxkJadhav)](https://github.com/DeepxkJadhav).
 
-- A clear description of the vulnerability
-- Steps to reproduce the issue
-- Affected versions and components
-- Impact assessment (severity, potential for exploitation)
-- Any suggested fixes or mitigations, if available
+**Please include the following details in your report:**
+- Description of the vulnerability and its potential impact.
+- Step-by-step reproduction instructions or a minimal Proof of Concept (PoC).
+- Affected components (e.g., WebSocket bridge, canvas renderer, GOAP planner).
+- Potential remediation strategies or proposed patches, if available.
 
-## Response Timeline
+### Response Timeline:
+- **Acknowledgment**: Within 48 hours of report receipt.
+- **Triage & Assessment**: Within 5 business days.
+- **Remediation & Advisory Release**: Coordinated release with a target window of 14-30 days depending on severity.
 
-- **48 hours** -- Initial acknowledgment of your report
-- **7 days** -- Preliminary assessment and severity classification
-- **30 days** -- Target for a fix or mitigation to be released
-
-We will keep you informed of progress throughout the process.
+---
 
 ## Safe Harbor
 
-We consider security research conducted in good faith to be authorized activity. We will not pursue legal action against researchers who:
-
-- Make a good faith effort to avoid privacy violations, data destruction, and service disruption
-- Report vulnerabilities promptly and provide sufficient detail for reproduction
-- Do not publicly disclose the vulnerability before a fix is available
-- Do not exploit the vulnerability beyond what is necessary to demonstrate the issue
-
-## Credit
-
-We appreciate the work of security researchers. With your permission, we will publicly credit you in the release notes when a reported vulnerability is fixed.
-
-## Security Practices
-
-This project employs the following security measures at system boundaries:
-
-- **Input validation** using Zod schemas for all public API inputs
-- **Parameterized SQL queries** to prevent injection attacks
-- **Path traversal prevention** via the `PathValidator` module
-- **Command injection protection** via the `SafeExecutor` module
-
-For questions about this policy, contact security@sentient.io.
+We consider vulnerability research conducted in good faith to be authorized activity. We will not pursue legal action against researchers who:
+- Avoid privacy violations, destruction of data, and interruption of service.
+- Disclose findings privately and allow reasonable time for a fix before public disclosure.
+- Act in compliance with applicable laws.

@@ -108,7 +108,7 @@ outputOfficialHookResult(output);
 
 ```bash
 # Add plugin marketplace
-/plugin marketplace add claude-flow https://github.com/sentient/sentient
+/plugin marketplace add claude-flow https://github.com/DeepxkJadhav/Sentient-UI
 
 # Install plugin
 /plugin install claude-flow
@@ -118,7 +118,7 @@ outputOfficialHookResult(output);
 
 ```bash
 # Clone and link
-git clone https://github.com/sentient/sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI
 claude --plugin-dir ./claude-flow/plugin
 ```
 

@@ -65,7 +65,7 @@ Three new MCP tools wired through agentdb@3.0.0-alpha.13's native Cypher-routed 
 - `agentdb_causal-edge-delete` — calls `GraphDatabaseAdapter.deleteEdgesByEndpoints(from, to, relation?)` (Cypher-injection-safe)
 - `agentdb_causal-node-delete` — calls `GraphDatabaseAdapter.deleteNode(id, {cascade: true})` returns native `{deletedNode, deletedEdges}` audit
 
-All wrapped in MutationGuard (fail-closed) + AttestationLog (audit). Unblocks `/adr-index` re-index when ADR files are deleted from disk — stale nodes + dangling `supersedes` / `amends` / `related` / `depends-on` edges are now scrubbable. Closed [#1784](https://github.com/sentient/sentient/issues/1784).
+All wrapped in MutationGuard (fail-closed) + AttestationLog (audit). Unblocks `/adr-index` re-index when ADR files are deleted from disk — stale nodes + dangling `supersedes` / `amends` / `related` / `depends-on` edges are now scrubbable. Closed [#1784](https://github.com/DeepxkJadhav/Sentient-UI/issues/1784).
 
 ### What didn't change
 
@@ -7624,8 +7624,8 @@ cp -r ./data-backup-v2 ./data
 
 | Resource | Link |
 |----------|------|
-| 📚 Documentation | [github.com/sentient/sentient](https://github.com/sentient/sentient) |
-| 🐛 Issues & Bugs | [github.com/sentient/sentient/issues](https://github.com/sentient/sentient/issues) |
+| 📚 Documentation | [github.com/DeepxkJadhav/Sentient-UI](https://github.com/DeepxkJadhav/Sentient-UI) |
+| 🐛 Issues & Bugs | [github.com/DeepxkJadhav/Sentient-UI/issues](https://github.com/DeepxkJadhav/Sentient-UI/issues) |
 | 💼 Professional Implementation | [sentient.io](https://sentient.io) — Enterprise consulting, custom integrations, and production deployment |
 | 💬 Discord Community | [Agentics Foundation](https://discord.com/invite/dfxmpwkG2D) |
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/sentient/sentient/v3/docs/spec/schemas/sentient-anchor-record-v1.schema.json",
+  "$id": "https://github.com/DeepxkJadhav/Sentient-UI/v3/docs/spec/schemas/sentient-anchor-record-v1.schema.json",
   "title": "SentientAnchorRecordV1 (PROPOSED-EXTENSION)",
   "description": "PROPOSED-EXTENSION - NOT part of ADR-322C. ADR-322C defines records and their verification but is silent on how a record is anchored into a foreign chain. sentient/rvm#35 and sentient/autogenous#10 both need a pointer format, so this is the minimal placeholder for that need. It requires its own ADR before any repo depends on it. Do not treat conformance to this file as conformance to ADR-322C.",
   "type": "object",

@@ -103,5 +103,5 @@ async function sonaRouteWithLookahead(
 
 - arXiv:2601.22311 — "Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM Agents" (Jan 2026)
 - arXiv:2511.17332v2 — "Agentifying Agentic AI" (AAAI 2026 Bridge Program)
-- [Dream Cycle Issue #2401](https://github.com/sentient/sentient/issues/2401) — Prior intelligence deep-dive (benchmark contamination)
+- [Dream Cycle Issue #2401](https://github.com/DeepxkJadhav/Sentient-UI/issues/2401) — Prior intelligence deep-dive (benchmark contamination)
 - [Dream Cycle Research Report](dream-2026-06-22-intelligence.md)

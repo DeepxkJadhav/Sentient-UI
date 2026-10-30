@@ -651,7 +651,7 @@ docker-compose up -d
 
 ## Learn More
 - [RuVector Docker Hub](https://hub.docker.com/r/sentient/ruvector-postgres)
-- [Claude-Flow Documentation](https://github.com/sentient/sentient)
+- [Claude-Flow Documentation](https://github.com/DeepxkJadhav/Sentient-UI)
 `;
 
 /**

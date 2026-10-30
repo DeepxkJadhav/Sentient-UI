@@ -4,7 +4,7 @@
 **Date**: 2026-06-16 (revised same-day with spike result)
 **Parent**: [ADR-151](ADR-151-harness-intelligence-layer.md) (Phase 3 scope shell — Harness Intelligence Layer)
 **Inherits**: ADR-150's four architectural constraints (removable / optional / graceful / CI-gate)
-**Spike**: `plugins/sentient-metaharness/scripts/_spike-similarity.mjs` ([iter-35 commit](https://github.com/sentient/sentient/commit/HEAD))
+**Spike**: `plugins/sentient-metaharness/scripts/_spike-similarity.mjs` ([iter-35 commit](https://github.com/DeepxkJadhav/Sentient-UI/commit/HEAD))
 
 ## Spike result (iter 35 — measured)
 

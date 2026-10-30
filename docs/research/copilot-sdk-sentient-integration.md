@@ -360,11 +360,11 @@ v3/@claude-flow/copilot/
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sentient/sentient.git",
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI.git",
     "directory": "v3/@claude-flow/copilot"
   },
-  "homepage": "https://github.com/sentient/sentient#readme",
-  "bugs": { "url": "https://github.com/sentient/sentient/issues" },
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI#readme",
+  "bugs": { "url": "https://github.com/DeepxkJadhav/Sentient-UI/issues" },
   "engines": { "node": ">=20" },
   "dependencies": {
     "@github/copilot-sdk": "^1.0.0",
@@ -511,7 +511,7 @@ export const PACKAGE_INFO = {
   version: VERSION,
   description: 'GitHub Copilot SDK integration for Claude Flow / Sentient',
   platform: 'copilot',
-  repository: 'https://github.com/sentient/sentient',
+  repository: 'https://github.com/DeepxkJadhav/Sentient-UI',
 } as const;
 
 export default { VERSION, PACKAGE_INFO };

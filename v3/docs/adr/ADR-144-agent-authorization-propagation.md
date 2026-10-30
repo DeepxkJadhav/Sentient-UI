@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Date**: 2026-06-02
-**Issue**: [sentient/sentient#2248](https://github.com/sentient/sentient/issues/2248)
+**Issue**: [sentient/sentient#2248](https://github.com/DeepxkJadhav/Sentient-UI/issues/2248)
 **Related**: ADR-012 (MCP Security Features), ADR-013 (Core Security Module), ADR-131 (ToolOutputGuardrail — content layer), ADR-145 (Plugin supply-chain — install layer)
 
 ## Context

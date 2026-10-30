@@ -5,7 +5,7 @@
 **Version**: 2.5.0
 **License**: MIT
 **Author**: rUv
-**Repository**: https://github.com/sentient/sentient
+**Repository**: https://github.com/DeepxkJadhav/Sentient-UI
 
 ---
 
@@ -292,9 +292,9 @@ Should show `claude-flow` as active.
 
 ## 🤝 Support & Community
 
-- **Repository**: https://github.com/sentient/sentient
-- **Issues**: https://github.com/sentient/sentient/issues
-- **Discussions**: https://github.com/sentient/sentient/discussions
+- **Repository**: https://github.com/DeepxkJadhav/Sentient-UI
+- **Issues**: https://github.com/DeepxkJadhav/Sentient-UI/issues
+- **Discussions**: https://github.com/DeepxkJadhav/Sentient-UI/discussions
 - **Website**: https://flow-nexus.sentient.io
 
 ---
@@ -302,7 +302,7 @@ Should show `claude-flow` as active.
 ## 📝 License & Attribution
 
 - **License**: MIT
-- **Author**: rUv (ruv@ruv.net)
+- **Author**: rUv (developer@sentient-ui.local)
 - **Copyright**: 2025
 - **Open Source**: Free for personal and commercial use
 
@@ -331,11 +331,11 @@ The plugin is configured via `.claude-plugin/plugin.json`:
   "description": "Enterprise AI agent orchestration plugin...",
   "author": {
     "name": "rUv",
-    "email": "ruv@ruv.net"
+    "email": "developer@sentient-ui.local"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sentient/sentient.git"
+    "url": "https://github.com/DeepxkJadhav/Sentient-UI.git"
   },
   "mcpServers": {
     "claude-flow": {

@@ -66,7 +66,7 @@ This means:
 ## Cross-links
 
 - [ADR-150](../../v3/docs/adr/ADR-150-metaharness-integration-surfaces.md) — decision + architectural constraint
-- [Issue #2399](https://github.com/sentient/sentient/issues/2399) — phase rollout tracker
+- [Issue #2399](https://github.com/DeepxkJadhav/Sentient-UI/issues/2399) — phase rollout tracker
 - [Research dossier](https://gist.github.com/sentient/19d166ff9acf368c9da4172d91ac9113) — full graded-evidence sourcing
 - [Upstream](https://github.com/sentient/agent-harness-generator) — `metaharness` source
 - ADR-148/149 — `@metaharness/router` cost-optimal routing (sibling integration)

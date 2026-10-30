@@ -10,7 +10,7 @@ Heavy jobs — multi-year walk-forward backtests, large Monte-Carlo runs, parame
 
 ## Prerequisites
 
-> ✅ **`neural-trader@^2.8.11`** (shipped 2026-05-14; see [post-mortem gist](https://gist.github.com/sentient/a1aca90a5c299d89fa92e905dab11041) and [announcement #1981](https://github.com/sentient/sentient/issues/1981)).
+> ✅ **`neural-trader@^2.8.11`** (shipped 2026-05-14; see [post-mortem gist](https://gist.github.com/sentient/a1aca90a5c299d89fa92e905dab11041) and [announcement #1981](https://github.com/DeepxkJadhav/Sentient-UI/issues/1981)).
 > Resolves four compounding bugs that made the package unusable since v2.5.0:
 > 1. Install-hook fork-bomb (#1974 — 120 GB RAM on Apple Silicon) — fixed in 2.7.2 ([neural-trader#109](https://github.com/sentient/neural-trader/pull/109)).
 > 2. `require('neural-trader')` always threw `Cannot find module './src/cli/lib/napi-loader-shared'` — missing files restored in 2.7.5 ([neural-trader#111](https://github.com/sentient/neural-trader/pull/111)).

@@ -178,8 +178,8 @@ those concepts separate.
 
 ## Further reading
 
-- [ADR-325 — Claim Federation](https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-325-claim-federation-zero-trust-capability-plane.md)
-- [ADR-326 — Cognitum Product Plane](https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-326-cognitum-product-plane-claim-federation.md)
-- [ADR-327 — Concurrent Development Harness](https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-327-federated-concurrent-development-harness.md)
-- [ADR-328 — Assisted Agent Learning](https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-328-cognitum-assisted-agent-learning.md)
-- [ADR-329 — Capability Brain](https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-329-sentient-capability-brain-mcp-guidance.md)
+- [ADR-325 — Claim Federation](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-325-claim-federation-zero-trust-capability-plane.md)
+- [ADR-326 — Cognitum Product Plane](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-326-cognitum-product-plane-claim-federation.md)
+- [ADR-327 — Concurrent Development Harness](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-327-federated-concurrent-development-harness.md)
+- [ADR-328 — Assisted Agent Learning](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-328-cognitum-assisted-agent-learning.md)
+- [ADR-329 — Capability Brain](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-329-sentient-capability-brain-mcp-guidance.md)

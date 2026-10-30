@@ -200,5 +200,5 @@ for (const v of allViolations) {
   }
 }
 
-console.error('\nADR-128: https://github.com/sentient/sentient/blob/main/v3/docs/adr/ADR-128-init-bundle-reduce-refactor.md\n');
+console.error('\nADR-128: https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/docs/adr/ADR-128-init-bundle-reduce-refactor.md\n');
 process.exit(1);

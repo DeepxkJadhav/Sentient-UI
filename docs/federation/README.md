@@ -270,7 +270,7 @@ The federation plugin handles signing, PII gating, breaker, and audit on every s
 
 ## Support
 
-- Issues: https://github.com/sentient/sentient/issues
-- Tracking issue (ADR-111): [#1879](https://github.com/sentient/sentient/issues/1879)
+- Issues: https://github.com/DeepxkJadhav/Sentient-UI/issues
+- Tracking issue (ADR-111): [#1879](https://github.com/DeepxkJadhav/Sentient-UI/issues/1879)
 - Federation gist (current through alpha.14): https://gist.github.com/sentient/3b5111a2ea7e450ff262ce96e88560bf
 - ADR-111 deep-dive gist: https://gist.github.com/sentient/c640fc71c7a6ced37908e645d5db84c5

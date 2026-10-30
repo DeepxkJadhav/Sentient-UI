@@ -97,7 +97,7 @@ The labelled corpus encodes domain knowledge that no regex can express compactly
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Pretrain (writes 415-pattern store)

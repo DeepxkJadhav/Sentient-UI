@@ -677,8 +677,8 @@ npx @claude-flow/cli@latest memory init --force --verbose
 
 ## Support
 
-- Documentation: https://github.com/sentient/sentient
-- Issues: https://github.com/sentient/sentient/issues
+- Documentation: https://github.com/DeepxkJadhav/Sentient-UI
+- Issues: https://github.com/DeepxkJadhav/Sentient-UI/issues
 
 ---
 

@@ -27,7 +27,7 @@
  *   node scripts/gen-seed-corpus-v2.mjs --out /tmp/corpus.json
  *   node scripts/gen-seed-corpus-v2.mjs --no-write  # dry run, print summary only
  *
- * Co-Authored-By: Sentient <ruv@ruv.net>
+ * Co-Authored-By: Sentient <developer@sentient-ui.local>
  */
 
 import { writeFileSync, mkdirSync } from 'node:fs';

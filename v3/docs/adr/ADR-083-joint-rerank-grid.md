@@ -107,7 +107,7 @@ Three configs tied at the corpus ceiling. Picked hw=0.7 cw=0.3 over hw=0.8 cw=0.
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 node v3/@claude-flow/cli/scripts/pretrain-from-github.mjs
 

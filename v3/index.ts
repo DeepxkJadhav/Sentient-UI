@@ -537,7 +537,7 @@ export const V3_INFO = {
   name: 'claude-flow',
   version: V3_VERSION.full,
   description: 'Complete reimagining of Claude-Flow with 15-agent hierarchical mesh swarm',
-  repository: 'https://github.com/sentient/sentient',
+  repository: 'https://github.com/DeepxkJadhav/Sentient-UI',
   license: 'MIT',
   engines: {
     node: '>=20.0.0'

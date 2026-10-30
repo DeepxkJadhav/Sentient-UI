@@ -439,7 +439,7 @@ async function callOpenAICompat(
         'content-type': 'application/json',
         // OpenRouter convention: identify the integrating app for analytics
         // and rate-limit tiering. Harmless on other OpenAI-compat backends.
-        'HTTP-Referer': 'https://github.com/sentient/sentient',
+        'HTTP-Referer': 'https://github.com/DeepxkJadhav/Sentient-UI',
         'X-Title': 'Sentient',
       },
       body: JSON.stringify({

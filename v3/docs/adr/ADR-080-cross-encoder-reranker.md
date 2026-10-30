@@ -90,7 +90,7 @@ Sweet spot is broad — anywhere from 0.5:0.5 to 0.3:0.7 hits the same 9/10, 10/
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Unit tests — 44 total (5 new cross-encoder degradation tests, no network)

@@ -86,7 +86,7 @@ The gap comes from our multi-field BM25's tokenisation choices: no Snowball stem
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc )
 
 # Pretrain caches (once each)

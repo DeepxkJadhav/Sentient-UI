@@ -276,8 +276,8 @@ npx skills add sentient/sentient --all
 
 ## Documentation
 
-- Repository: https://github.com/sentient/sentient
-- Issues: https://github.com/sentient/sentient/issues
+- Repository: https://github.com/DeepxkJadhav/Sentient-UI
+- Issues: https://github.com/DeepxkJadhav/Sentient-UI/issues
 - Sponsor: https://github.com/sponsors/sentient
 `;
 

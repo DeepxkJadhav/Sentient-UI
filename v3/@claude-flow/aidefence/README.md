@@ -572,13 +572,13 @@ Pre-scan agent inputs automatically:
 
 ## Contributing
 
-Contributions are welcome! Please see our [Contributing Guide](https://github.com/sentient/sentient/blob/main/CONTRIBUTING.md).
+Contributions are welcome! Please see our [Contributing Guide](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/CONTRIBUTING.md).
 
 ### Development
 
 ```bash
 # Clone repository
-git clone https://github.com/sentient/sentient.git
+git clone https://github.com/DeepxkJadhav/Sentient-UI.git
 cd claude-flow/v3/@claude-flow/aidefence
 
 # Install dependencies

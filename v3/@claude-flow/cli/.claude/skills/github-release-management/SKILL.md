@@ -1015,8 +1015,8 @@ npx claude-flow@alpha github version-sync \
 - **deployment-orchestration**: Advanced deployment strategies
 
 ### Support & Community
-- Issues: https://github.com/sentient/sentient/issues
-- Discussions: https://github.com/sentient/sentient/discussions
+- Issues: https://github.com/DeepxkJadhav/Sentient-UI/issues
+- Discussions: https://github.com/DeepxkJadhav/Sentient-UI/discussions
 - Documentation: https://claude-flow.dev/docs
 
 ---

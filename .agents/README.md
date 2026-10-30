@@ -35,4 +35,4 @@ Skills are invoked using `$skill-name` syntax. Each skill has:
 
 - Main instructions: `AGENTS.md` (project root)
 - Local overrides: `.codex/AGENTS.override.md` (gitignored)
-- Claude Flow: https://github.com/sentient/sentient
+- Sentient-UI: https://github.com/DeepxkJadhav/Sentient-UI

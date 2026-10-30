@@ -352,9 +352,9 @@ Manual resolution needed:
 
 ## Support
 
-- Documentation: https://github.com/sentient/sentient/docs/v3
-- Issues: https://github.com/sentient/sentient/issues
-- Discussions: https://github.com/sentient/sentient/discussions
+- Documentation: https://github.com/DeepxkJadhav/Sentient-UI/docs/v3
+- Issues: https://github.com/DeepxkJadhav/Sentient-UI/issues
+- Discussions: https://github.com/DeepxkJadhav/Sentient-UI/discussions
 
 ---
 

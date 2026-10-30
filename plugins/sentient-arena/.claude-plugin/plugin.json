@@ -6,7 +6,7 @@
     "name": "sentient",
     "url": "https://github.com/sentient"
   },
-  "homepage": "https://github.com/sentient/sentient",
+  "homepage": "https://github.com/DeepxkJadhav/Sentient-UI",
   "license": "MIT",
   "keywords": [
     "sentient",
@@ -20,5 +20,5 @@
     "mcp"
   ],
   "categories": ["intelligence", "swarm", "simulation"],
-  "repository": "https://github.com/sentient/sentient"
+  "repository": "https://github.com/DeepxkJadhav/Sentient-UI"
 }

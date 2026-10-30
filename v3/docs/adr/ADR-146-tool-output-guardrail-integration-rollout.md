@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Date**: 2026-06-02
-**Issue**: [sentient/sentient#2149](https://github.com/sentient/sentient/issues/2149) (follow-up — original ADR-131 closed P1 only)
+**Issue**: [sentient/sentient#2149](https://github.com/DeepxkJadhav/Sentient-UI/issues/2149) (follow-up — original ADR-131 closed P1 only)
 **Related**: ADR-131 (ToolOutputGuardrail — P1 shipped), ADR-144 (Authorization Propagation), ADR-145 (Plugin Supply-Chain Integrity)
 
 ## Context

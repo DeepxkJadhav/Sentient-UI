@@ -715,16 +715,16 @@ MIT License - see [LICENSE](../../LICENSE) for details.
 
 ## Links
 
-- [GitHub Repository](https://github.com/sentient/sentient)
+- [GitHub Repository](https://github.com/DeepxkJadhav/Sentient-UI)
 - [agent-browser](https://github.com/AugmentCode/agent-browser)
-- [Claude-Flow Documentation](https://github.com/sentient/sentient#readme)
+- [Claude-Flow Documentation](https://github.com/DeepxkJadhav/Sentient-UI#readme)
 - [MCP Protocol](https://modelcontextprotocol.io)
 
 ---
 
 <div align="center">
 
-**Part of the [Claude-Flow](https://github.com/sentient/sentient) ecosystem**
+**Part of the [Claude-Flow](https://github.com/DeepxkJadhav/Sentient-UI) ecosystem**
 
 Made with ❤️ by [sentient](https://github.com/sentient)
 

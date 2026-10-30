@@ -124,7 +124,7 @@ This checkout has zero `Revert "<X>"`-style reverts in the 200 most recent commi
 ## Verification
 
 ```bash
-git clone https://github.com/sentient/sentient && cd sentient
+git clone https://github.com/DeepxkJadhav/Sentient-UI && cd sentient
 npm install && ( cd v3/@claude-flow/cli && npx tsc -b )
 
 # Unit tests (no I/O, no network) — 21 + 7 tests

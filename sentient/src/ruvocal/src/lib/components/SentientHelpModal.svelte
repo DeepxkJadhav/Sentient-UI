@@ -154,7 +154,7 @@
 		'"Spawn a 5-agent hierarchical swarm (architect, coder, tester, reviewer, security-auditor) for a Python→TypeScript refactor."',
 		'"Use ruvector__hooks_route on the task: add OAuth to a SvelteKit API. Then spawn the recommended agent."',
 		'"Search Sentient memory for prior decisions about authentication, then web_research recent OAuth2 best practices, in parallel."',
-		'"Analyze the diff at github.com/sentient/sentient/pull/1687 — risk score, classify, and suggest reviewers."',
+		'"Analyze the diff at github.com/DeepxkJadhav/Sentient-UI/pull/1687 — risk score, classify, and suggest reviewers."',
 	];
 
 	const stack: { name: string; role: string }[] = [
@@ -375,17 +375,17 @@
 				<h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">Resources</h3>
 				<ul class="space-y-1 text-sm">
 					<li>
-						<a href="https://github.com/sentient/sentient" target="_blank" rel="noopener" class="text-blue-600 hover:underline dark:text-blue-400">
-							github.com/sentient/sentient →
+						<a href="https://github.com/DeepxkJadhav/Sentient-UI" target="_blank" rel="noopener" class="text-blue-600 hover:underline dark:text-blue-400">
+							github.com/DeepxkJadhav/Sentient-UI →
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/sentient/sentient/blob/main/sentient/docs/adr/ADR-033-RUVOCAL-WASM-MCP-INTEGRATION.md" target="_blank" rel="noopener" class="text-blue-600 hover:underline dark:text-blue-400">
+						<a href="https://github.com/DeepxkJadhav/Sentient-UI/blob/main/sentient/docs/adr/ADR-033-RUVOCAL-WASM-MCP-INTEGRATION.md" target="_blank" rel="noopener" class="text-blue-600 hover:underline dark:text-blue-400">
 							ADR-033 — Web UI architecture →
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/sentient/sentient/issues/1689" target="_blank" rel="noopener" class="text-blue-600 hover:underline dark:text-blue-400">
+						<a href="https://github.com/DeepxkJadhav/Sentient-UI/issues/1689" target="_blank" rel="noopener" class="text-blue-600 hover:underline dark:text-blue-400">
 							Issue #1689 — UI capabilities & roadmap →
 						</a>
 					</li>

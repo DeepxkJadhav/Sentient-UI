@@ -393,6 +393,6 @@ For the 95% of agent browsing tasks (navigate, read content, fill forms, click b
 
 - [ADR-035: MCP Tool Groups](ADR-035-MCP-TOOL-GROUPS.md) — browser group architecture
 - [ADR-033: RuVector + Sentient MCP Integration](ADR-033-RUVECTOR-SENTIENT-MCP-INTEGRATION.md) — stdio MCP client pattern
-- [@claude-flow/browser README](https://github.com/sentient/sentient/blob/main/v3/@claude-flow/browser/README.md) — existing 59-tool API surface
+- [@claude-flow/browser README](https://github.com/DeepxkJadhav/Sentient-UI/blob/main/v3/@claude-flow/browser/README.md) — existing 59-tool API surface
 - [Servo project](https://servo.org/) — Linux Foundation browser engine
 - [napi-rs](https://napi.rs/) — Rust ↔ Node.js FFI framework
