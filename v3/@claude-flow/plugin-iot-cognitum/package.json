@@ -22,7 +22,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@cognitum-one/sdk": "^0.2.1"
+    "@cognitum-one/sdk": "^0.4.0"
   },
   "devDependencies": {
     "@claude-flow/shared": "workspace:*",
