@@ -1,154 +1,183 @@
-# Sentient-UI
+<div align="center">
+  <img src="assets/hero.svg" alt="Sentient-UI Hero Banner" width="100%" />
+</div>
 
-Visual swarm orchestrator and control plane for AI agent teams.
+<div align="center">
 
-[![Sentient-UI CI](https://github.com/DeepxkJadhav/Sentient-UI/actions/workflows/ci.yml/badge.svg)](https://github.com/DeepxkJadhav/Sentient-UI/actions/workflows/ci.yml)
-[![Interface](https://img.shields.io/badge/Interface-Sentient--UI-6366f1?style=flat&logoColor=white)](https://github.com/DeepxkJadhav/Sentient-UI)
-[![Author](https://img.shields.io/badge/Author-Deepxk_Jadhav-06b6d4?style=flat)](https://github.com/DeepxkJadhav)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](https://opensource.org/licenses/MIT)
+[![CI](https://img.shields.io/github/actions/workflow/status/DeepxkJadhav/Sentient-UI/ci.yml?branch=main&style=flat-square&label=build&color=10b981)](https://github.com/DeepxkJadhav/Sentient-UI/actions)
+[![License](https://img.shields.io/badge/license-MIT-0ea5e9?style=flat-square)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19.0-22d3ee?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-6.2-bd34fe?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Maintainer](https://img.shields.io/badge/maintainer-Deepxk_Jadhav-64748b?style=flat-square)](https://github.com/DeepxkJadhav)
 
-Sentient-UI is a web dashboard and execution layer for running coordinated teams of coding agents. It provides an interactive canvas to view agent topologies, a goal-oriented action planner (GOAP) based on A* search, consensus voting mechanisms, and an inspector for Model Context Protocol (MCP) tools.
+</div>
 
 ---
 
-## Features
+Sentient-UI is a visual swarm orchestrator and real-time execution control plane for autonomous coding agent fleets. It provides an interactive 2D canvas to observe physics-based agent topologies, an A* Goal-Oriented Action Planner (GOAP), Byzantine fault-tolerant consensus voting, a 314+ MCP tool explorer, and a 3-tier model router.
 
-### Topology canvas
-- Renders agents as nodes with live status indicators (idle, busy, thinking, error).
-- Supports four topologies: mesh, hierarchical, star, and ring.
-- Animates message passing along connection lines.
-- Lets you select any agent to view its properties and send instructions directly.
+```
+$ git clone https://github.com/DeepxkJadhav/Sentient-UI.git
+$ cd Sentient-UI && npm install
+$ npm run dev
 
-### Goal planner (GOAP)
-- Breaks down high-level objectives into sequential steps using A* search.
-- Tracks world state across preconditions and postconditions (architecture, code generation, test runs, security reviews, and deployments).
-- Re-plans automatically if an intermediate step fails.
+  VITE v6.2.0  ready in 240 ms
 
-### Fleet management and consensus
-- Includes predefined agent archetypes: coordinator, architect, coder, reviewer, security, and tester.
-- Spawns custom agents with dedicated roles and capabilities.
-- Implements four voting protocols: Byzantine fault tolerance (3f+1), Raft, Paxos, and Gossip.
-
-### MCP tool explorer
-- Lists 314+ Model Context Protocol tools grouped by namespace (`swarm_*`, `agent_*`, `memory_*`, `intelligence_*`, `task_*`, `hooks_*`).
-- Displays parameter schemas and input fields.
-- Allows running tool calls with real-time latency measurement.
-
-### Vector memory
-- Queries embeddings using cosine distance to retrieve architectural records and previous task logs.
-- Displays the cognitive loop cycle: retrieve, judge, distill, and consolidate.
-
-### Model router
-- Shows request distribution across three tiers:
-  - Tier 1: Deterministic codemods and AST tools (zero token cost, ~1ms).
-  - Tier 2: Fast triage models (~145ms).
-  - Tier 3: Reasoning models for complex multi-turn plans (~890ms).
-- Reports token consumption, latency averages, and estimated cost.
-
-### Event terminal
-- Displays real-time logs from agent communication and tool execution.
-- Includes a command bar supporting `/topology`, `/spawn`, `/mission`, `/vote`, `/memory`, and `/clear`.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+  ➜  Bridge:  ws://localhost:3001/ws (6 agents connected, Byzantine quorum ready)
+```
 
 ---
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    subgraph Frontend ["Sentient-UI (React 19, TypeScript, Vite)"]
-        TC["Topology Canvas (Canvas 2D)"]
-        GP["GOAP Planner"]
-        FC["Fleet and Consensus"]
-        ME["Memory Explorer"]
-        TE["MCP Tool Explorer"]
-        RT["Model Router"]
-        TERM["Terminal"]
-        CTX["Swarm State Context"]
-        
-        TC <--> CTX
-        GP <--> CTX
-        FC <--> CTX
-        ME <--> CTX
-        TE <--> CTX
-        RT <--> CTX
-        TERM <--> CTX
-    end
+<div align="center">
+  <img src="assets/architecture.svg" alt="Sentient-UI System Architecture" width="100%" />
+</div>
 
-    subgraph Backend ["Node.js / Express Server"]
-        HTTP["HTTP API (:3001)"]
-        WS["WebSocket Server (:3001/ws)"]
-        MCP["MCP Gateway"]
-    end
-
-    CTX <==>|"WebSocket stream"| WS
-    TE -->|"Run tool"| HTTP
-    HTTP --> MCP
-```
+The system operates across three coordinated tiers:
+1. **Frontend Cockpit**: React 19 single-page application rendering an HTML5 Canvas 2D force-directed swarm graph at 60fps, GOAP task solver, consensus voting controls, vector memory inspector, and streaming event terminal.
+2. **Telemetry Bridge**: Node.js and Express server running on port 3001 with a WebSocket server (`ws://localhost:3001/ws`) broadcasting agent heartbeats, log streams, and status deltas.
+3. **Agent Fleet and MCP Engine**: Six pre-configured neural agent archetypes governed by Byzantine ($3f+1$) and Raft consensus, integrated with 314+ Model Context Protocol (MCP) tools.
 
 ---
 
-## Repository layout
+## Core Systems
+
+### 1. Swarm Topologies
+
+Sentient-UI dynamically positions and routes communication across four graph layouts:
+
+| Topology | Connectivity | Routing Characteristic | Primary Use Case |
+|:---|:---|:---|:---|
+| `mesh` | $O(N^2)$ all-to-all | Bi-directional peer messaging | Collaborative problem solving and cross-review |
+| `hierarchical` | $O(N)$ tree | Lead-delegated task tree | Complex engineering pipelines with Queen dispatch |
+| `centralized` | $O(N)$ radial star | Radial hub-and-spoke | High-throughput batch task distribution |
+| `ring` | $O(N)$ circular | Sequential token handoff | Staged verification and assembly lines |
+
+Switching topologies recalculates canvas physics springs in real time without restarting active agent processes.
+
+### 2. Goal-Oriented Action Planning (GOAP)
+
+The planner translates high-level prompts into minimal-cost execution plans using an A* graph search over an 8-bit world state bitmask:
+
+```
+World State Vector:
+[ goalDefined | archValidated | codeGenerated | testsPassing | securityAudited | memoryIndexed | consensusReached | deployed ]
+```
+
+- **Preconditions and Effects**: Every registered action declares required bit inputs and positive/negative bit outputs.
+- **Dynamic Replanning**: If an action encounters a compilation error or test failure during execution, the planner halts the pipeline, evaluates the mutated world state, and computes a new path to the goal.
+
+### 3. Distributed Consensus Engine
+
+Critical swarm operations require verification before state mutation. Four voting algorithms are implemented:
+
+| Protocol | Quorum Requirement | Fault Tolerance | Typical Application |
+|:---|:---|:---|:---|
+| **Byzantine (BFT)** | $\ge 67\%$ supermajority | Survives $f$ Byzantine faults where $N \ge 3f + 1$ | Production deployments, architectural commits |
+| **Raft** | $> 50\%$ majority | Survives minority node failure | Coordinator election, sequence log commit |
+| **Paxos** | Weighted majority quorum | Distributed consensus | Cross-cluster state agreement |
+| **Gossip** | Probabilistic convergence | Eventual consistency | Background vector cache synchronization |
+
+### 4. 314+ MCP Tool Explorer
+
+Sentient-UI includes an interactive inspector for Model Context Protocol (MCP) tool registrations across six namespaces:
+
+- `swarm_*`: Swarm lifecycle initialization, topology transitions, and cluster health telemetry.
+- `agent_*`: Dynamic agent spawning, role capabilities, and isolated memory allocation.
+- `memory_*`: High-dimensional vector storage, cosine similarity queries, and cache sweeps.
+- `intelligence_*`: 4-stage cognitive loop (`RETRIEVE` $\rightarrow$ `JUDGE` $\rightarrow$ `DISTILL` $\rightarrow$ `CONSOLIDATE`).
+- `task_*`: Task creation, sub-task tree partitioning, assignment, and completion receipts.
+- `hooks_*`: Pre-task invariants, post-task evaluations, and model routing hooks.
+
+### 5. 3-Tier Model Router & Economics
+
+Requests are dynamically classified across three execution tiers to balance latency and cost:
+
+| Tier | Category | Engine | Latency | Cost / 1k Tokens |
+|:---:|:---|:---|:---:|:---:|
+| **Tier 1** | Deterministic | AST codemods, regex, local formatters | ~1ms | $0.000 |
+| **Tier 2** | Reflex | Lightweight triage models (Flash / Haiku) | ~145ms | $0.001 |
+| **Tier 3** | Reasoning | Multi-turn reasoning swarms (Sonnet / Pro / Opus) | ~890ms | $0.015 |
+
+---
+
+## Directory Structure
 
 ```
 Sentient-UI/
-├── .github/                           # CI workflows and issue templates
+├── assets/                            # Architecture diagrams and vector badges
+│   ├── architecture.svg
+│   └── hero.svg
+├── .github/                           # CI/CD Workflows and repository templates
+│   ├── workflows/                     # ci.yml, codeql.yml, release.yml
+│   └── ISSUE_TEMPLATE/                # Bug report and feature request forms
 ├── server/
-│   └── index.ts                       # Express and WebSocket server
-├── src/                               # Frontend source
-│   ├── components/                    # Canvas, GOAP, Fleet, and Tool explorer
-│   ├── context/                       # Swarm state and event stream
-│   ├── lib/                           # GOAP solver and graph physics
-│   ├── types/                         # TypeScript interfaces
-│   └── data/                          # Tool definitions and default agents
-├── plugins/                           # Monorepo plugins
-├── .agents/skills/                    # Skill playbooks
-├── package.json                       # Scripts and dependencies
-├── vite.config.ts                     # Vite build configuration
-└── tailwind.config.js                 # Styling configuration
+│   └── index.ts                       # Express HTTP server & WebSocket telemetry bridge
+├── src/                               # Frontend single-page application
+│   ├── components/                    # Canvas, GOAP solver, Fleet, Tool explorer, Terminal
+│   ├── context/                       # Reactive swarm state & event bus
+│   ├── data/                          # 314+ MCP tool catalog & agent archetypes
+│   ├── lib/                           # A* solver, graph physics, and bitmask logic
+│   └── types/                         # TypeScript interfaces (Swarm, GOAP, MCP, Memory)
+├── plugins/                           # 48 Sentient monorepo packages
+├── .agents/skills/                    # Specialized agent skill playbooks
+├── package.json                       # Core dependencies, scripts, and monorepo configuration
+├── vite.config.ts                     # Vite 6 bundler configuration
+└── tailwind.config.js                 # Dark slate design system
 ```
 
 ---
 
-## Quick start
+## Getting Started
 
-### Prerequisites
-- Node.js 20 or higher
-- npm 9 or higher
+### Requirements
+- **Node.js**: `20.x` or `22.x`
+- **npm**: `9.x` or higher
 
-### 1. Install
+### 1. Clone the repository
 ```bash
 git clone https://github.com/DeepxkJadhav/Sentient-UI.git
 cd Sentient-UI
+```
+
+### 2. Install dependencies
+```bash
 npm install
 ```
 
-### 2. Start the frontend
+### 3. Launch the development environment
+Start the frontend:
 ```bash
 npm run dev
+# Running at: http://localhost:3000
 ```
-Open `http://localhost:3000` in your browser.
 
-### 3. Start the backend
-In a separate terminal:
+Start the backend telemetry server in a separate terminal:
 ```bash
 npm run server
+# HTTP API at: http://localhost:3001
+# WebSocket stream at: ws://localhost:3001/ws
 ```
-The HTTP server runs on `http://localhost:3001` and the WebSocket stream listens on `ws://localhost:3001/ws`.
 
 ### 4. Build for production
 ```bash
 npm run build
+# Compiles TypeScript and bundles production assets into dist/
 ```
-This runs `tsc` and generates static assets in `dist/`.
 
 ---
 
-## Telemetry and WebSocket API
+## WebSocket & Telemetry Protocol
 
-The frontend connects to the backend at `ws://localhost:3001/ws`.
+The frontend connects to the backend over WebSocket at `ws://localhost:3001/ws`.
 
-### Client messages
-Change topology:
+### Inbound Client Messages
+
+Set topology:
 ```json
 {
   "type": "SET_TOPOLOGY",
@@ -160,55 +189,57 @@ Spawn an agent:
 ```json
 {
   "type": "SPAWN_AGENT",
-  "name": "Tester-2",
-  "role": "Integration Tester",
-  "capabilities": ["vitest", "e2e"]
+  "name": "Atlas-Security",
+  "role": "Security Specialist",
+  "capabilities": ["cve_scan", "auth_audit"]
 }
 ```
 
-### Server messages
-Event log broadcast:
+### Outbound Server Broadcasts
+
+Swarm log event:
 ```json
 {
   "type": "LOG_ENTRY",
   "data": {
     "agent": "QueenCoordinator",
-    "message": "Quorum accepted for deployment",
+    "message": "Byzantine quorum reached with 83.3% approval",
     "level": "info",
-    "timestamp": "2026-10-31T03:30:00.000Z"
+    "timestamp": "2026-10-31T17:30:00.000Z"
   }
 }
 ```
 
 ---
 
-## Terminal commands
+## Terminal Slash Commands
 
-The terminal at the bottom of the interface accepts the following slash commands:
+The embedded streaming cybernetic terminal provides live command-line interaction with the active swarm:
 
-| Command | Arguments | Description |
-|---------|-----------|-------------|
-| `/topology` | `mesh`, `hierarchical`, `star`, or `ring` | Changes the canvas topology layout |
-| `/spawn` | `<name> <role>` | Adds a new agent to the active fleet |
-| `/mission` | `<objective>` | Solves and executes an A* GOAP plan |
-| `/vote` | `<proposal>` | Starts a consensus vote across active agents |
-| `/memory` | `<query>` | Searches the memory store by cosine distance |
-| `/clear` | none | Clears terminal history |
+| Command | Arguments | Effect |
+|:---|:---|:---|
+| `/topology` | `mesh \| hierarchical \| star \| ring` | Triggers real-time canvas graph repositioning |
+| `/spawn` | `<name> <role>` | Provisions a new agent into the active fleet |
+| `/mission` | `<objective>` | Solves and executes an A* GOAP mission sequence |
+| `/vote` | `<proposal_name>` | Initiates a Byzantine ($3f+1$) quorum vote |
+| `/memory` | `<query>` | Executes cosine similarity search on the vector ledger |
+| `/clear` | none | Flushes terminal scroll buffer |
 
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines, branch conventions, and testing instructions.
+Review [CONTRIBUTING.md](CONTRIBUTING.md) for branch naming conventions, TypeScript standards, and pull request verification checklists.
 
 ---
 
 ## Security
 
-Please report vulnerabilities privately following the process in [SECURITY.md](SECURITY.md).
+Vulnerabilities should be reported through [GitHub Security Advisories](https://github.com/DeepxkJadhav/Sentient-UI/security/advisories/new). See [SECURITY.md](SECURITY.md) for timeline commitments and safe harbor terms.
 
 ---
 
 ## License
 
-MIT License. Copyright (c) 2026 Deepxk Jadhav.
+This project is licensed under the [MIT License](LICENSE).  
+Copyright (c) 2026 **[Deepxk Jadhav](https://github.com/DeepxkJadhav)**.

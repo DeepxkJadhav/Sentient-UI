@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="360" fill="none">
+  <defs>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="900" height="360" rx="14" fill="#080c14" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Section 1: Frontend Client -->
+  <g transform="translate(32, 28)">
+    <rect width="250" height="304" rx="10" fill="url(#panelGrad)" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Header -->
+    <rect width="250" height="36" rx="10" fill="#0f172a" fill-opacity="0.5"/>
+    <circle cx="20" cy="18" r="4" fill="#38bdf8"/>
+    <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">
+      Sentient-UI Cockpit
+    </text>
+    <text x="235" y="22" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b" text-anchor="end">React 19</text>
+
+    <!-- Sub-modules -->
+    <g transform="translate(16, 52)">
+      <!-- Module 1 -->
+      <rect width="218" height="40" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1">Topology Canvas</text>
+      <text x="12" y="32" font-family="sans-serif" font-size="9.5" fill="#64748b">Canvas 2D / Real-time Physics</text>
+
+      <!-- Module 2 -->
+      <g transform="translate(0, 48)">
+        <rect width="218" height="40" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1">GOAP A* Engine</text>
+        <text x="12" y="32" font-family="sans-serif" font-size="9.5" fill="#64748b">World State Matrix &amp; Replanner</text>
+      </g>
+
+      <!-- Module 3 -->
+      <g transform="translate(0, 96)">
+        <rect width="218" height="40" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1">Fleet &amp; Quorum</text>
+        <text x="12" y="32" font-family="sans-serif" font-size="9.5" fill="#64748b">Byzantine (3f+1) / Raft Ballots</text>
+      </g>
+
+      <!-- Module 4 -->
+      <g transform="translate(0, 144)">
+        <rect width="218" height="40" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1">Memory &amp; Router</text>
+        <text x="12" y="32" font-family="sans-serif" font-size="9.5" fill="#64748b">Cosine Distance / 3-Tier Routing</text>
+      </g>
+
+      <!-- Module 5 -->
+      <g transform="translate(0, 192)">
+        <rect width="218" height="40" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1">Cybernetic Console</text>
+        <text x="12" y="32" font-family="sans-serif" font-size="9.5" fill="#64748b">Interactive CLI &amp; Event Stream</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connectors: Frontend -> Bus -->
+  <g transform="translate(282, 0)">
+    <!-- WebSocket Line -->
+    <line x1="0" y1="135" x2="68" y2="135" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="66,131 74,135 66,139" fill="#38bdf8"/>
+    <polygon points="6,131 -2,135 6,139" fill="#38bdf8"/>
+    <text x="35" y="125" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">ws://</text>
+
+    <!-- HTTP REST Line -->
+    <line x1="0" y1="225" x2="68" y2="225" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <polygon points="66,221 74,225 66,229" fill="#64748b"/>
+    <text x="35" y="217" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b" text-anchor="middle">HTTP POST</text>
+  </g>
+
+  <!-- Section 2: Core Telemetry Server -->
+  <g transform="translate(356, 75)">
+    <rect width="200" height="210" rx="10" fill="url(#panelGrad)" stroke="#1e293b" stroke-width="1"/>
+    
+    <rect width="200" height="34" rx="10" fill="#0f172a" fill-opacity="0.5"/>
+    <circle cx="18" cy="17" r="4" fill="#818cf8"/>
+    <text x="30" y="21" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">
+      Telemetry Bridge
+    </text>
+    <text x="186" y="21" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b" text-anchor="end">:3001</text>
+
+    <g transform="translate(14, 46)">
+      <rect width="172" height="42" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#cbd5e1">WebSocket Broadcast</text>
+      <text x="10" y="32" font-family="sans-serif" font-size="9" fill="#64748b">Live Swarm State Sync</text>
+    </g>
+
+    <g transform="translate(14, 96)">
+      <rect width="172" height="42" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#cbd5e1">MCP Gateway Server</text>
+      <text x="10" y="32" font-family="sans-serif" font-size="9" fill="#64748b">Protocol Request Handler</text>
+    </g>
+
+    <g transform="translate(14, 146)">
+      <rect width="172" height="42" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#cbd5e1">Event Bus &amp; Logger</text>
+      <text x="10" y="32" font-family="sans-serif" font-size="9" fill="#64748b">Persistent Telemetry</text>
+    </g>
+  </g>
+
+  <!-- Connectors: Server -> Fleet -->
+  <g transform="translate(556, 0)">
+    <line x1="0" y1="135" x2="68" y2="135" stroke="#10b981" stroke-width="2"/>
+    <polygon points="66,131 74,135 66,139" fill="#10b981"/>
+    <text x="35" y="125" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981" text-anchor="middle">Dispatch</text>
+
+    <line x1="0" y1="225" x2="68" y2="225" stroke="#f59e0b" stroke-width="1.5"/>
+    <polygon points="66,221 74,225 66,229" fill="#f59e0b"/>
+    <text x="35" y="217" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f59e0b" text-anchor="middle">Execute</text>
+  </g>
+
+  <!-- Section 3: Swarm Fleet & MCP Stack -->
+  <g transform="translate(630, 28)">
+    <rect width="238" height="304" rx="10" fill="url(#panelGrad)" stroke="#1e293b" stroke-width="1"/>
+    
+    <rect width="238" height="36" rx="10" fill="#0f172a" fill-opacity="0.5"/>
+    <circle cx="18" cy="18" r="4" fill="#10b981"/>
+    <text x="30" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">
+      Swarm Fleet &amp; Tools
+    </text>
+    <text x="224" y="22" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b" text-anchor="end">Engine</text>
+
+    <!-- Sub-modules -->
+    <g transform="translate(14, 52)">
+      <!-- Fleet Cluster -->
+      <rect width="210" height="92" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1">Active Agent Fleet</text>
+      <text x="12" y="38" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#38bdf8">&gt; QueenCoordinator (Lead)</text>
+      <text x="12" y="54" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#cbd5e1">&gt; Atlas (Architect) &amp; Titan (Coder)</text>
+      <text x="12" y="70" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#cbd5e1">&gt; Aegis (Security) &amp; Vanguard (QA)</text>
+      <text x="12" y="86" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#10b981">&gt; Consensus: Byzantine Quorum</text>
+
+      <!-- MCP Tool Registries -->
+      <g transform="translate(0, 104)">
+        <rect width="210" height="132" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1">314+ MCP Registries</text>
+        <text x="12" y="38" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#94a3b8">• swarm_* (topologies, health)</text>
+        <text x="12" y="56" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#94a3b8">• agent_* (spawning, capabilities)</text>
+        <text x="12" y="74" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#94a3b8">• memory_* (HNSW vector store)</text>
+        <text x="12" y="92" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#94a3b8">• intelligence_* (4-stage loop)</text>
+        <text x="12" y="110" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#94a3b8">• task_* &amp; hooks_* (lifecycle)</text>
+      </g>
+    </g>
+  </g>
+</svg>
