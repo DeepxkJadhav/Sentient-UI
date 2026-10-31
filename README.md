@@ -1,76 +1,69 @@
-# Sentient-UI ⚡
-### Autonomous Multi-Agent Swarm Orchestrator & Neural Mission Control Plane
+# Sentient-UI
 
-<div align="center">
+Visual swarm orchestrator and control plane for AI agent teams.
 
 [![Sentient-UI CI](https://github.com/DeepxkJadhav/Sentient-UI/actions/workflows/ci.yml/badge.svg)](https://github.com/DeepxkJadhav/Sentient-UI/actions/workflows/ci.yml)
-[![Interface](https://img.shields.io/badge/Interface-Sentient--UI-6366f1?style=for-the-badge&logoColor=white)](https://github.com/DeepxkJadhav/Sentient-UI)
-[![Author](https://img.shields.io/badge/Author-Deepxk_Jadhav-06b6d4?style=for-the-badge)](https://github.com/DeepxkJadhav)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![React 19](https://img.shields.io/badge/React-19.0-61dafb?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript 5](https://img.shields.io/badge/TypeScript-5.7-3178c6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Vite 6](https://img.shields.io/badge/Vite-6.2-bd34fe?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Interface](https://img.shields.io/badge/Interface-Sentient--UI-6366f1?style=flat&logoColor=white)](https://github.com/DeepxkJadhav/Sentient-UI)
+[![Author](https://img.shields.io/badge/Author-Deepxk_Jadhav-06b6d4?style=flat)](https://github.com/DeepxkJadhav)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](https://opensource.org/licenses/MIT)
 
-**Sentient-UI** is a neural mission control plane and multi-agent swarm orchestrator designed for autonomous coding agents, visual topology coordination, Goal-Oriented Action Planning ($A^*$), and Byzantine fault-tolerant consensus.
-
-[Quick Start](#-quick-start) • [Architecture](#-system-architecture) • [Features](#-core-capabilities) • [API & WebSocket](#-telemetry--websocket-api) • [Contributing](#-contributing)
-
-</div>
+Sentient-UI is a web dashboard and execution layer for running coordinated teams of coding agents. It provides an interactive canvas to view agent topologies, a goal-oriented action planner (GOAP) based on A* search, consensus voting mechanisms, and an inspector for Model Context Protocol (MCP) tools.
 
 ---
 
-## 🌟 Core Capabilities
+## Features
 
-### 1. 🌌 Interactive Swarm Topology Canvas
-- **Dynamic Physics & Morphing**: Seamlessly transition between **Hierarchical**, **Mesh**, **Star**, and **Ring** topologies in real time.
-- **Node Telemetry**: Live rendering of agent status (`idle`, `busy`, `thinking`, `error`), CPU load, memory utilization, and latency.
-- **Visual Edge Pulses**: Animated particle packets flowing along active inter-agent communication channels.
-- **Direct Delegation**: Inspect any agent node on the canvas to inspect its registered capabilities and inject direct task prompts.
+### Topology canvas
+- Renders agents as nodes with live status indicators (idle, busy, thinking, error).
+- Supports four topologies: mesh, hierarchical, star, and ring.
+- Animates message passing along connection lines.
+- Lets you select any agent to view its properties and send instructions directly.
 
-### 2. 🧭 Goal-Oriented Action Planning (GOAP) A* Engine
-- **Autonomous Mission Decomposition**: Converts natural-language objectives into an optimal $A^*$ shortest-path action sequence.
-- **World State Bitmask Matrix**: Real-time evaluation of preconditions and post-condition effects (`goalDefined`, `architectureValidated`, `codeGenerated`, `testsPassing`, `securityAudited`, `memoryIndexed`, `consensusReached`, `deployed`).
-- **Adaptive Dynamic Replanning**: Automatically recalculates path vectors from the current world state when environment obstacles occur.
+### Goal planner (GOAP)
+- Breaks down high-level objectives into sequential steps using A* search.
+- Tracks world state across preconditions and postconditions (architecture, code generation, test runs, security reviews, and deployments).
+- Re-plans automatically if an intermediate step fails.
 
-### 3. 👑 Agent Fleet Commander & Byzantine Quorum
-- **Specialized Archetypes**: Pre-configured agents including `QueenCoordinator`, `Atlas-Architect`, `Titan-Coder`, `Aegis-Security`, `Krypton-Reviewer`, and `Vanguard-Tester`.
-- **Dynamic Spawning**: Provision custom neural workers with isolated working memory and distinct skill sets.
-- **Distributed Consensus Engine**: Launch Byzantine ($3f+1$), Raft, Gossip, or Paxos voting ballots with live quorum progress meters.
+### Fleet management and consensus
+- Includes predefined agent archetypes: coordinator, architect, coder, reviewer, security, and tester.
+- Spawns custom agents with dedicated roles and capabilities.
+- Implements four voting protocols: Byzantine fault tolerance (3f+1), Raft, Paxos, and Gossip.
 
-### 4. 🔌 314+ MCP Tool Explorer & Gateway
-- **Namespace Directory**: `swarm_*`, `agent_*`, `memory_*`, `intelligence_*`, `task_*`, and `hooks_*`.
-- **Interactive JSON Playground**: Test tool executions with schema validation and real-time execution timing.
+### MCP tool explorer
+- Lists 314+ Model Context Protocol tools grouped by namespace (`swarm_*`, `agent_*`, `memory_*`, `intelligence_*`, `task_*`, `hooks_*`).
+- Displays parameter schemas and input fields.
+- Allows running tool calls with real-time latency measurement.
 
-### 5. 🧠 Semantic Memory & Intelligence Pipeline
-- **Vector Search**: High-dimensional cosine distance queries across semantic facts, ADRs, and reflexions.
-- **4-Stage Cognitive Loop**: Visual execution of the intelligence cycle:
-  $$\text{RETRIEVE} \longrightarrow \text{JUDGE} \longrightarrow \text{DISTILL} \longrightarrow \text{CONSOLIDATE}$$
+### Vector memory
+- Queries embeddings using cosine distance to retrieve architectural records and previous task logs.
+- Displays the cognitive loop cycle: retrieve, judge, distill, and consolidate.
 
-### 6. ⚡ 3-Tier Model Router & Token Telemetry
-- **Tier 1 (Deterministic)**: AST / Codemods ($0.00 / 0 tokens, 1ms).
-- **Tier 2 (Reflex)**: Lightweight triage models (Flash / Haiku, 145ms).
-- **Tier 3 (Frontier Reasoning)**: Multi-turn deep thinking swarms (Sonnet / Opus / Pro, 890ms).
-- **Telemetry**: Real-time token burn rates, session cost tracking, and request distribution.
+### Model router
+- Shows request distribution across three tiers:
+  - Tier 1: Deterministic codemods and AST tools (zero token cost, ~1ms).
+  - Tier 2: Fast triage models (~145ms).
+  - Tier 3: Reasoning models for complex multi-turn plans (~890ms).
+- Reports token consumption, latency averages, and estimated cost.
 
-### 7. 💻 Live Swarm Event Bus & Streaming Terminal
-- Real-time logging of all inter-agent messages, tool dispatches, and consensus ballots.
-- Interactive CLI command bar supporting `/topology`, `/spawn`, `/mission`, `/vote`, and `/memory`.
+### Event terminal
+- Displays real-time logs from agent communication and tool execution.
+- Includes a command bar supporting `/topology`, `/spawn`, `/mission`, `/vote`, `/memory`, and `/clear`.
 
 ---
 
-## 🏛️ System Architecture
+## Architecture
 
 ```mermaid
 flowchart TD
-    subgraph UI ["Sentient-UI Frontend (React 19 + Canvas 2D)"]
-        TC["Topology Canvas (Physics Engine)"]
-        GP["GOAP A* Planner"]
-        FC["Fleet Commander & Byzantine Quorum"]
-        ME["Vector Memory Explorer"]
-        TE["314+ MCP Tool Explorer"]
-        RT["3-Tier Model Router"]
-        TERM["Cybernetic Streaming Terminal"]
-        CTX["Swarm State & Event Bus"]
+    subgraph Frontend ["Sentient-UI (React 19, TypeScript, Vite)"]
+        TC["Topology Canvas (Canvas 2D)"]
+        GP["GOAP Planner"]
+        FC["Fleet and Consensus"]
+        ME["Memory Explorer"]
+        TE["MCP Tool Explorer"]
+        RT["Model Router"]
+        TERM["Terminal"]
+        CTX["Swarm State Context"]
         
         TC <--> CTX
         GP <--> CTX
@@ -81,89 +74,81 @@ flowchart TD
         TERM <--> CTX
     end
 
-    subgraph Server ["Node.js / Express Telemetry Server"]
-        HTTP["Express HTTP API (:3001)"]
-        WS["WebSocket Telemetry Stream (:3001/ws)"]
-        MCP["MCP Tool Gateway"]
+    subgraph Backend ["Node.js / Express Server"]
+        HTTP["HTTP API (:3001)"]
+        WS["WebSocket Server (:3001/ws)"]
+        MCP["MCP Gateway"]
     end
 
-    CTX <==>|"WebSocket Telemetry"| WS
-    TE -->|"Execute Tool"| HTTP
+    CTX <==>|"WebSocket stream"| WS
+    TE -->|"Run tool"| HTTP
     HTTP --> MCP
 ```
 
 ---
 
-## 📂 Repository Structure
+## Repository layout
 
 ```
 Sentient-UI/
-├── .github/                           # CI/CD Workflows, CodeQL, Issue & PR templates
-│   ├── workflows/                     # ci.yml, codeql.yml, release.yml
-│   └── ISSUE_TEMPLATE/                # Interactive issue templates
+├── .github/                           # CI workflows and issue templates
 ├── server/
-│   └── index.ts                       # Express + WebSocket telemetry & MCP bridge
-├── src/                               # Sentient-UI React 19 / Canvas frontend
-│   ├── components/                    # Canvas graph, GOAP tree, Fleet, MCP playground
-│   ├── context/                       # Swarm state, event stream, and consensus bus
-│   ├── lib/                           # GOAP A* solver & state transitions
-│   ├── types/                         # Swarm, GOAP, Memory, and MCP type definitions
-│   └── data/                          # Tool definitions & agent presets
-├── plugins/                           # Monorepo plugins & specialized extensions
-├── .agents/skills/                    # Specialized agent skill playbooks
-├── package.json                       # Core dependencies, scripts, and workspaces
-├── vite.config.ts                     # Vite 6 configuration & proxy routing
-├── tailwind.config.js                 # Cybernetic dark design system
-├── LICENSE                            # MIT License (Deepxk Jadhav)
-├── CONTRIBUTING.md                    # Contribution guidelines
-├── SECURITY.md                        # Security policy
-└── CHANGELOG.md                       # Release notes and history
+│   └── index.ts                       # Express and WebSocket server
+├── src/                               # Frontend source
+│   ├── components/                    # Canvas, GOAP, Fleet, and Tool explorer
+│   ├── context/                       # Swarm state and event stream
+│   ├── lib/                           # GOAP solver and graph physics
+│   ├── types/                         # TypeScript interfaces
+│   └── data/                          # Tool definitions and default agents
+├── plugins/                           # Monorepo plugins
+├── .agents/skills/                    # Skill playbooks
+├── package.json                       # Scripts and dependencies
+├── vite.config.ts                     # Vite build configuration
+└── tailwind.config.js                 # Styling configuration
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick start
 
 ### Prerequisites
-- **Node.js**: >= 20.0.0
-- **npm**: >= 9.0.0
+- Node.js 20 or higher
+- npm 9 or higher
 
-### 1. Clone & Install
+### 1. Install
 ```bash
 git clone https://github.com/DeepxkJadhav/Sentient-UI.git
 cd Sentient-UI
 npm install
 ```
 
-### 2. Start the Frontend
+### 2. Start the frontend
 ```bash
 npm run dev
-# Running at: http://localhost:3000
 ```
+Open `http://localhost:3000` in your browser.
 
-### 3. Start the Telemetry & WebSocket Server
+### 3. Start the backend
+In a separate terminal:
 ```bash
 npm run server
-# HTTP API at: http://localhost:3001
-# WebSocket stream at: ws://localhost:3001/ws
 ```
+The HTTP server runs on `http://localhost:3001` and the WebSocket stream listens on `ws://localhost:3001/ws`.
 
-### 4. Build for Production
+### 4. Build for production
 ```bash
 npm run build
-# Compiles TypeScript and creates optimized bundle in /dist
 ```
+This runs `tsc` and generates static assets in `dist/`.
 
 ---
 
-## 📡 Telemetry & WebSocket API
+## Telemetry and WebSocket API
 
-Sentient-UI communicates with local or distributed agents through WebSocket streams:
+The frontend connects to the backend at `ws://localhost:3001/ws`.
 
-### Connection
-- **Endpoint**: `ws://localhost:3001/ws`
-
-### Client Commands (JSON Payload)
+### Client messages
+Change topology:
 ```json
 {
   "type": "SET_TOPOLOGY",
@@ -171,22 +156,24 @@ Sentient-UI communicates with local or distributed agents through WebSocket stre
 }
 ```
 
+Spawn an agent:
 ```json
 {
   "type": "SPAWN_AGENT",
-  "name": "Sentinel-1",
-  "role": "Security Specialist",
-  "capabilities": ["audit", "cve_scan"]
+  "name": "Tester-2",
+  "role": "Integration Tester",
+  "capabilities": ["vitest", "e2e"]
 }
 ```
 
-### Server Events
+### Server messages
+Event log broadcast:
 ```json
 {
   "type": "LOG_ENTRY",
   "data": {
     "agent": "QueenCoordinator",
-    "message": "Swarm converged on Byzantine quorum",
+    "message": "Quorum accepted for deployment",
     "level": "info",
     "timestamp": "2026-10-31T03:30:00.000Z"
   }
@@ -195,34 +182,33 @@ Sentient-UI communicates with local or distributed agents through WebSocket stre
 
 ---
 
-## 💻 Terminal Commands
+## Terminal commands
 
-The embedded streaming cybernetic terminal provides real-time CLI commands:
+The terminal at the bottom of the interface accepts the following slash commands:
 
 | Command | Arguments | Description |
 |---------|-----------|-------------|
-| `/topology` | `<mesh\|hierarchical\|star\|ring>` | Instantly morphs the swarm canvas topology |
-| `/spawn` | `<name> <role>` | Provisions and initializes a new agent in the active fleet |
-| `/mission` | `<objective description>` | Formulates and runs an $A^*$ GOAP mission plan |
-| `/vote` | `<proposal_name>` | Triggers a Byzantine ($3f+1$) consensus vote |
-| `/memory` | `<search query>` | Executes high-dimensional vector memory retrieval |
-| `/clear` | - | Clears the terminal screen |
+| `/topology` | `mesh`, `hierarchical`, `star`, or `ring` | Changes the canvas topology layout |
+| `/spawn` | `<name> <role>` | Adds a new agent to the active fleet |
+| `/mission` | `<objective>` | Solves and executes an A* GOAP plan |
+| `/vote` | `<proposal>` | Starts a consensus vote across active agents |
+| `/memory` | `<query>` | Searches the memory store by cosine distance |
+| `/clear` | none | Clears terminal history |
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcomed! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on code style, branch conventions, and testing requirements.
-
----
-
-## 🛡️ Security
-
-For vulnerability disclosure and security procedures, see [SECURITY.md](SECURITY.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines, branch conventions, and testing instructions.
 
 ---
 
-## 📜 License
+## Security
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.  
-Copyright (c) 2026 **[Deepxk Jadhav](https://github.com/DeepxkJadhav)**.
+Please report vulnerabilities privately following the process in [SECURITY.md](SECURITY.md).
+
+---
+
+## License
+
+MIT License. Copyright (c) 2026 Deepxk Jadhav.

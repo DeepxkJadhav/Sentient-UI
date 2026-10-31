@@ -32,7 +32,7 @@ export const MemoryExplorer: React.FC = () => {
     { id: 'RETRIEVE', label: '1. Retrieve', desc: 'Vector cosine match' },
     { id: 'JUDGE', label: '2. Judge', desc: 'Relevance scoring gate' },
     { id: 'DISTILL', label: '3. Distill', desc: 'Invariant truth extraction' },
-    { id: 'CONSOLIDATE', label: '4. Consolidate', desc: 'Commit to RuVector' }
+    { id: 'CONSOLIDATE', label: '4. Consolidate', desc: 'Commit to Vector Memory' }
   ];
 
   const handleAddMemory = async (e: React.FormEvent) => {
@@ -61,7 +61,7 @@ export const MemoryExplorer: React.FC = () => {
               <h3 className="text-sm font-bold text-white uppercase font-mono tracking-wide">
                 4-Stage Intelligence Cycle
               </h3>
-              <p className="text-[11px] text-slate-400">RuVector Cognitive Memory Loop</p>
+              <p className="text-[11px] text-slate-400">Vector Memory Cognitive Memory Loop</p>
             </div>
           </div>
 
@@ -162,20 +162,20 @@ export const MemoryExplorer: React.FC = () => {
                 type="submit"
                 className="flex-1 py-1.5 px-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-xl text-xs font-mono font-semibold transition"
               >
-                Save to RuVector
+                Save to Vector Memory
               </button>
             </div>
           </form>
         </div>
       </div>
 
-      {/* Right Column: RuVector & AgentDB Semantic Ledger */}
+      {/* Right Column: Vector Semantic Ledger */}
       <div className="flex-1 flex flex-col bg-slate-950/90 rounded-2xl border border-slate-800 p-5 shadow-2xl">
         <div className="flex items-center justify-between pb-3 border-b border-slate-800">
           <div>
             <h3 className="text-sm font-bold text-white uppercase font-mono tracking-wide flex items-center gap-2">
               <Database className="w-4 h-4 text-cyan-400" />
-              RuVector & AgentDB Semantic Ledger ({displayedMemories.length})
+              Vector Semantic Ledger ({displayedMemories.length})
             </h3>
             <p className="text-xs text-slate-400 font-mono">HNSW Vector Embeddings & Hybrid SQLite Storage</p>
           </div>

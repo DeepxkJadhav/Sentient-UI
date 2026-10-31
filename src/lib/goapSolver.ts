@@ -48,7 +48,7 @@ export const DEFAULT_ACTIONS: GOAPAction[] = [
   },
   {
     id: 'act-mem-index',
-    name: 'Index Knowledge & Reflexions to RuVector',
+    name: 'Index Knowledge & Reflexions to Vector Memory',
     description: 'Consolidate execution learnings, vector embeddings, and patterns into HNSW memory store.',
     cost: 1,
     assignedRole: 'architect',

@@ -1,7 +1,7 @@
 {
   "name": "sentient-ui",
   "version": "3.56.10",
-  "description": "Sentient-UI: Autonomous Multi-Agent Swarm Orchestrator & Neural Cockpit",
+  "description": "Visual swarm orchestrator and control plane for AI agent teams",
   "main": "dist/index.js",
   "type": "module",
   "bin": {

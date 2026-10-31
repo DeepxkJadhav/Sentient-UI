@@ -33,7 +33,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
     { id: 'goap', label: 'GOAP Planner', icon: Compass },
     { id: 'cockpit', label: 'Fleet Commander', icon: Cpu },
     { id: 'mcp', label: 'MCP Tools (314+)', icon: Layers },
-    { id: 'memory', label: 'RuVector Memory', icon: Database },
+    { id: 'memory', label: 'Vector Memory', icon: Database },
     { id: 'telemetry', label: 'Neural Router', icon: Activity },
     { id: 'terminal', label: 'Live Console', icon: Terminal }
   ];

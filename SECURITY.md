@@ -1,42 +1,31 @@
-# Security Policy — Sentient-UI
+# Security Policy: Sentient-UI
 
-## Supported Versions
+## Supported versions
 
-We actively provide security patches and updates for the following versions:
-
-| Version | Supported          |
-|---------|--------------------|
-| 1.x     | :white_check_mark: |
-| < 1.0   | :x:                |
+| Version | Supported |
+|---------|-----------|
+| 1.x     | Yes       |
+| < 1.0   | No        |
 
 ---
 
-## Reporting a Vulnerability
+## Reporting a vulnerability
 
-We take the security of **Sentient-UI** seriously. If you discover a security vulnerability or potential threat within the codebase or dependencies, please report it responsibly.
+Report security issues through [GitHub Security Advisories](https://github.com/DeepxkJadhav/Sentient-UI/security/advisories/new) or contact the maintainer directly via GitHub ([@DeepxkJadhav](https://github.com/DeepxkJadhav)).
 
-### How to Report:
-1. **GitHub Security Advisory (Preferred)**:
-   Please report vulnerabilities privately via [GitHub Security Advisories](https://github.com/DeepxkJadhav/Sentient-UI/security/advisories/new).
-2. **Direct Contact**:
-   Alternatively, contact the maintainer directly through [GitHub Profile (@DeepxkJadhav)](https://github.com/DeepxkJadhav).
+Include:
+- A description of the issue and potential impact.
+- Steps or a minimal script to reproduce the problem.
+- Affected modules (such as the WebSocket server, canvas renderer, or planner).
+- Proposed fix if you have one.
 
-**Please include the following details in your report:**
-- Description of the vulnerability and its potential impact.
-- Step-by-step reproduction instructions or a minimal Proof of Concept (PoC).
-- Affected components (e.g., WebSocket bridge, canvas renderer, GOAP planner).
-- Potential remediation strategies or proposed patches, if available.
-
-### Response Timeline:
-- **Acknowledgment**: Within 48 hours of report receipt.
-- **Triage & Assessment**: Within 5 business days.
-- **Remediation & Advisory Release**: Coordinated release with a target window of 14-30 days depending on severity.
+### Expected timeline
+- Acknowledgment: within 48 hours.
+- Initial triage: within 5 business days.
+- Patch release: within 14 to 30 days depending on severity.
 
 ---
 
-## Safe Harbor
+## Safe harbor
 
-We consider vulnerability research conducted in good faith to be authorized activity. We will not pursue legal action against researchers who:
-- Avoid privacy violations, destruction of data, and interruption of service.
-- Disclose findings privately and allow reasonable time for a fix before public disclosure.
-- Act in compliance with applicable laws.
+We will not pursue legal action against researchers who report vulnerabilities responsibly, avoid data disruption, and allow reasonable time for a fix before disclosing details publicly.

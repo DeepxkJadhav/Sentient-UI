@@ -1,44 +1,44 @@
-# Claude Instructions — Sentient-UI
+# Development instructions: Sentient-UI
 
-> Project: **Sentient-UI**  
-> Maintainer: **Deepxk Jadhav** (`https://github.com/DeepxkJadhav/Sentient-UI`)  
-> Tech Stack: React 19, TypeScript 5, Vite 6, Tailwind CSS 3, Express, WebSocket, Canvas 2D  
+Project: Sentient-UI  
+Maintainer: Deepxk Jadhav (https://github.com/DeepxkJadhav/Sentient-UI)  
+Stack: React 19, TypeScript 5, Vite 6, Tailwind CSS 3, Express, WebSocket, Canvas 2D  
 
 ---
 
-## 🛠️ Build & Development Commands
+## Commands
 
 ```bash
 # Install dependencies
 npm install
 
-# Start Vite frontend development server (http://localhost:3000)
+# Start Vite frontend (http://localhost:3000)
 npm run dev
 
-# Start WebSocket & telemetry bridge (http://localhost:3001)
+# Start WebSocket server (http://localhost:3001)
 npm run server
 
-# Full production build (Typecheck + Vite bundle)
+# Production build
 npm run build
 
-# Preview production build locally
+# Preview build
 npm run preview
 ```
 
 ---
 
-## 📐 Architecture & Standards
+## Architecture and standards
 
-- **Frontend**: Located in `src/`. Built with modern React 19, functional components, hooks, and clean TypeScript interfaces.
-- **Canvas Physics**: In `src/components/TopologyCanvas.tsx`, uses native 2D Canvas with requestAnimationFrame for 60fps rendering of nodes, edges, pulses, and physics.
-- **State Management**: In `src/context/SwarmContext.tsx`, handles real-time agent rosters, GOAP plans, consensus ballots, and log streams.
-- **Backend Bridge**: In `server/index.ts`, Express HTTP server with `ws` WebSocket broadcast on port 3001.
-- **Style Guidelines**: Tailwind CSS with cybernetic dark theme (`#080b11`, `#0f172a`, `#1e293b`), crisp neon accents (`cyan`, `emerald`, `indigo`, `purple`, `rose`), and high-contrast typography.
+- Frontend code is in `src/`. Use functional React components and explicit TypeScript types.
+- Canvas animation is in `src/components/TopologyCanvas.tsx` using `requestAnimationFrame`. Keep allocations out of the render loop to maintain 60fps.
+- Swarm state is managed in `src/context/SwarmContext.tsx`.
+- Backend server is in `server/index.ts` using Express and `ws`.
+- Styling uses Tailwind CSS with dark slate backgrounds and neon accent colors.
 
 ---
 
-## 🚫 Critical Guidelines
+## Guidelines
 
-- **Never** add mentions of external or legacy framework names. The identity is exclusively **Sentient-UI** by **Deepxk Jadhav**.
-- **Preserve** existing working component code in `src/` and `server/`.
-- Ensure all builds (`npm run build`) pass with 0 errors before committing.
+- Keep the project identity as Sentient-UI by Deepxk Jadhav.
+- Preserve existing component logic in `src/` and `server/`.
+- Verify `npm run build` exits 0 before committing.

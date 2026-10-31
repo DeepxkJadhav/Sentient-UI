@@ -1,6 +1,6 @@
-# Local Development Configuration — Sentient-UI
+# Local development: Sentient-UI
 
-## Environment Variables
+## Environment variables
 
 ```bash
 PORT=3000
@@ -9,21 +9,21 @@ WS_PORT=3001
 NODE_ENV=development
 ```
 
-## Running Locally
+## Running locally
 
-1. **Frontend**:
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:3000` in your browser.
+Frontend:
+```bash
+npm run dev
+```
+Open `http://localhost:3000` in your browser.
 
-2. **Backend Telemetry Server**:
-   ```bash
-   npm run server
-   ```
-   Listens on `http://localhost:3001` and `ws://localhost:3001/ws`.
+Backend server:
+```bash
+npm run server
+```
+Listens on `http://localhost:3001` with WebSocket connections at `ws://localhost:3001/ws`.
 
-3. **Production Verification**:
-   ```bash
-   npm run build
-   ```
+Production build check:
+```bash
+npm run build
+```

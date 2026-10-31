@@ -159,8 +159,8 @@ const INITIAL_MEMORIES: MemoryEntry[] = [
   {
     id: 'mem-004',
     category: 'semantic',
-    content: 'RuVector HNSW index operates at <8ms latency for 10,000 embedded agent trajectories.',
-    metadata: { tags: ['ruvector', 'hnsw', 'vector-memory'], importance: 0.92, createdAt: new Date(Date.now() - 600000).toISOString() },
+    content: 'Vector Memory HNSW index operates at <8ms latency for 10,000 embedded agent trajectories.',
+    metadata: { tags: ['Vector Memory', 'hnsw', 'vector-memory'], importance: 0.92, createdAt: new Date(Date.now() - 600000).toISOString() },
     similarityScore: 0.82
   }
 ];
@@ -281,7 +281,7 @@ export const SwarmProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     }
     setAgentsList(prev => prev.filter(a => a.id !== agentId));
     if (selectedAgent?.id === agentId) setSelectedAgent(null);
-    addLog('AGENT', 'warn', `Agent [${target.name}] (${target.id}) terminated. Working memory flushed to RuVector.`);
+    addLog('AGENT', 'warn', `Agent [${target.name}] (${target.id}) terminated. Working memory flushed to Vector Memory.`);
   };
 
   const startMission = (goalPrompt: string) => {
@@ -479,7 +479,7 @@ export const SwarmProvider: React.FC<{ children: ReactNode }> = ({ children }) =
       };
     }).sort((a, b) => (b.similarityScore || 0) - (a.similarityScore || 0));
 
-    addLog('MEMORY', 'info', `RuVector HNSW search for "${query}" matched ${results.length} candidate embeddings.`);
+    addLog('MEMORY', 'info', `Vector Memory HNSW search for "${query}" matched ${results.length} candidate embeddings.`);
     return results;
   };
 
@@ -495,7 +495,7 @@ export const SwarmProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     });
 
     setTimeout(() => {
-      addLog('MEMORY', 'info', '[STAGE 1: RETRIEVE] Pulled 12 vector memories from RuVector SQLite layer.');
+      addLog('MEMORY', 'info', '[STAGE 1: RETRIEVE] Pulled 12 vector memories from Vector Memory SQLite layer.');
       setIntelligenceCycle(prev => ({ ...prev, currentStage: 'JUDGE', retrievedCount: 12, relevanceConfidence: 0.65, stageProgress: 50 }));
 
       setTimeout(() => {
@@ -526,7 +526,7 @@ export const SwarmProvider: React.FC<{ children: ReactNode }> = ({ children }) =
             similarityScore: 0.98
           };
           setMemories(m => [consolidatedEntry, ...m]);
-          addLog('MEMORY', 'success', `[STAGE 4: CONSOLIDATE] Written consolidated memory (${consolidatedEntry.id}) to RuVector ledger.`);
+          addLog('MEMORY', 'success', `[STAGE 4: CONSOLIDATE] Written consolidated memory (${consolidatedEntry.id}) to Vector Memory ledger.`);
         }, 800);
       }, 800);
     }, 800);

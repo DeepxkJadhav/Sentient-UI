@@ -1,30 +1,26 @@
-name: 💡 Feature Request
-description: Propose a new feature, component, or enhancement for Sentient-UI
-title: "[FEAT] <concise description>"
+name: Feature request
+description: Suggest an idea or enhancement for Sentient-UI
+title: "[Feature]: "
 labels: ["enhancement"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for suggesting a feature for **Sentient-UI**!
   - type: textarea
     id: problem
     attributes:
-      label: Is your feature request related to a problem?
-      description: A clear and concise description of the limitation or need.
-      placeholder: I am always frustrated when...
+      label: Problem statement
+      description: What problem or limitation are you trying to address?
+      placeholder: Describe the context or use case...
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Describe the proposed solution
-      description: Detailed explanation of how this should work and what UI/API changes are needed.
-      placeholder: Add a new topology mode or agent archetype...
+      label: Proposed change
+      description: What change or feature are you suggesting?
+      placeholder: Detailed description of the proposed behavior...
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Describe alternatives considered
-      description: Any alternative solutions or workarounds you've thought of.
+      label: Alternatives considered
+      description: Any other solutions or workarounds you considered.
