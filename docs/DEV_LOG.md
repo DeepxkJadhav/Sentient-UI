@@ -39,3 +39,4 @@ Automated and verified development entries.
 - `2026-11-08 16:26:00 +0530`: perf(render): memoize virtualized list item calculations
 - `2026-11-24 17:59:09 +0530`: test(unit): add shallow rendering tests for modal backdrop
 - `2026-11-23 11:50:30 +0530`: feat(ui): refine glassmorphism panel blur and border radius
+- `2026-11-23 14:25:15 +0530`: fix(components): prevent layout shift on async state mount
