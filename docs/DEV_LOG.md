@@ -41,3 +41,4 @@ Automated and verified development entries.
 - `2026-11-23 11:50:30 +0530`: feat(ui): refine glassmorphism panel blur and border radius
 - `2026-11-23 14:25:15 +0530`: fix(components): prevent layout shift on async state mount
 - `2026-11-23 17:10:40 +0530`: refactor(theme): optimize token caching in reactive theme store
+- `2026-11-24 11:32:04 +0530`: test(unit): add shallow rendering tests for modal backdrop
